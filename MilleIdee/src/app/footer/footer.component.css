@@ -1,0 +1,12 @@
+/* #ftt {
+    width: 100%;
+    position: absolute;
+} */
+
+.footxt {
+    /* color: #305fab; */
+    color: white;
+    /* font-family: "Chalkduster"; */
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 20px;
+}

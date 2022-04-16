@@ -1,0 +1,49 @@
+#h1 {
+
+    /* font-family: "Brush Script MT"; */
+    /* font-family: "Courier New"; */
+
+    /* margin-bottom: 15px; */
+    font-size: 140px;
+    /* margin-top: 65px; */
+}
+
+#h2 {
+    /* font-family: "Luminari"; */
+    /* font-family: "Courier New"; */
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.header {
+    font-family: "Chalkduster";
+    /* font-family: cursive; */
+    /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+    /* font-family: Copperplate,"Copperplate Gothic Light"; */
+
+
+    text-align: center;
+    /* margin-top: 2px; */
+    /* color: #3293a8; */
+    color: white;
+    /* text-shadow: 2px 2px 2px #0066cc; */
+    /* text-shadow: 2px 2px 0px white; */
+    margin-top: 105px;
+    /* color: white; */
+}
+
+img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-container {
+    background-color: #305fab;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid white;
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+    border-radius: 8px;
+}

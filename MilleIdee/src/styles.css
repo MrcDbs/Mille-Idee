@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('assets/img/lastBlueBg.jpeg');
+    /* background-color: #305fab;   MAIN COLOR*/
+    /* background-color: #205473; */
+    /* background-color: lightgrey; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}

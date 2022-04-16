@@ -1,0 +1,52 @@
+#txt {
+    color: #305fab;
+    font-size: 25px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+#leftLink {
+    color: #305fab;
+    font-size: 25px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+#offcanvasRightLabel,
+#offcanvasStartLabel {
+    color: #305fab;
+    font-family: "Chalkduster";
+    font-size: 35px;
+}
+
+
+#offcanvasTopLabel {
+    color: white;
+    font-family: "Chalkduster";
+    font-size: 45px;
+}
+
+#offcanvasTop {
+    background-color: #505d94;
+}
+
+#offcanvasStart {
+    background-color: #e9f1f2;
+}
+
+#customS {
+    color: white;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 20px;
+}
+
+.btt {
+    background-color: white
+}
+
+.customO {
+    width: 40%;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+/* a:hover {
+    font-style: #3293a8;
+} */
