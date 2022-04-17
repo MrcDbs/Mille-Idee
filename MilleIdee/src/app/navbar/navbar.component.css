@@ -1,26 +1,30 @@
 #txt {
     color: #305fab;
     font-size: 25px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+    font-family: "Gill Sans";
 }
 
 #leftLink {
     color: #305fab;
     font-size: 25px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+    font-family: "Gill Sans";
 }
 
 #offcanvasRightLabel,
 #offcanvasStartLabel {
     color: #305fab;
-    font-family: "Chalkduster";
+    /* font-family: "Chalkduster"; */
+    font-family: "Gill Sans";
     font-size: 35px;
 }
 
 
 #offcanvasTopLabel {
     color: white;
-    font-family: "Chalkduster";
+    /* font-family: "Chalkduster"; */
+    font-family: "Gill Sans";
     font-size: 45px;
 }
 
@@ -34,7 +38,8 @@
 
 #customS {
     color: white;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+    font-family: "Gill Sans";
     font-size: 20px;
 }
 
@@ -44,7 +49,8 @@
 
 .customO {
     width: 40%;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+    font-family: "Gill Sans";
 }
 
 #leftLink:hover {

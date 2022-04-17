@@ -5,24 +5,32 @@
 }
 
 .card-title {
-    font-size: 50px;
-    font-family: "Chalkduster";
+    font-size: 60px;
+    /* font-family: "Chalkduster"; */
+    font-family: "Gill Sans";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    /* padding-top: 65px; */
 }
 
 /* .lnk:hover {
     opacity: 0.8;
 } */
 
-.cont:hover .card {
+.lnk:hover .card {
     opacity: 0.85;
     /* filter: blur(1px); */
 }
 
-.cont:hover .middle {
+.lnk:hover .middle {
     opacity: 1;
 }
 
-.cont:hover .card-title {
+.lnk:hover .card-title {
     opacity: 0;
 }
 
