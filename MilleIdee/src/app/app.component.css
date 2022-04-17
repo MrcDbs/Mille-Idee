@@ -40,10 +40,12 @@ img {
 }
 
 .head-container {
-    background-color: #305fab;
-    border-left: 2.5px solid white;
+    /* background-color: #305fab; */
+    background-image: url('src/assets/img/sewing-machine.jpeg');
+    background-size: cover;
+    /* border-left: 2.5px solid white;
     border-right: 2.5px solid white;
+    border-bottom: 0.5px solid white; */
     border-top: 0.5px solid white;
-    border-bottom: 0.5px solid white;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }

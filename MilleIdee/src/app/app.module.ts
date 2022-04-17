@@ -12,6 +12,8 @@ import { ModalsCardComponent } from './modals-card/modals-card.component';
 import { AboutComponent } from './about/about.component';
 import { OrariComponent } from './orari/orari.component';
 import { OffcanvasComponent } from './offcanvas/offcanvas.component';
+import { NewProdottiComponent } from './new-prodotti/new-prodotti.component';
+import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { OffcanvasComponent } from './offcanvas/offcanvas.component';
     ModalsCardComponent,
     AboutComponent,
     OrariComponent,
-    OffcanvasComponent
+    OffcanvasComponent,
+    NewProdottiComponent,
+    PhotoGalleryComponent
   ],
   imports: [
     BrowserModule,
