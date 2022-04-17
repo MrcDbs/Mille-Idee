@@ -47,6 +47,10 @@
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 }
 
+#leftLink:hover {
+    color: #99b7bf;
+}
+
 /* a:hover {
     font-style: #3293a8;
 } */
