@@ -1,25 +1,58 @@
-<div *ngIf="mostra" id="carouselExampleFade" class="carousel slide carousel-fade customCarousel mx-auto my-5"
-    data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="assets/img/Filati1000.jpeg" class="d-block w-100" alt="...">
+<div class="bg">
+    <!-- <div class="py-4 mx-5 mb-1 mt-4 main">
+        <div class="row m-sm-auto">
+            <div class="item col-12 col-md-6 col-lg-4 px-1">
+                <h2 class="ms-5 py-4 ">Corsi di ricamo e cucito</h2>
+            </div>
+            <div class="vr"></div>
+            <div class="item  col-12 col-md-6 col-lg-4 px-1" id="middle">
+                <h2 class="ms-5 py-4 ">Riparazione tessuti e vestiti</h2>
+            </div>
+            <div class="vr"></div>
+            <div class="item  col-12 col-md-6 col-lg-4 px-1">
+                <h2 class="ms-5 py-4 ">Altro che fa l'attività</h2>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="assets/img/lana.jpeg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="assets/img/filo-bg-blue.jpeg" class="d-block w-100" alt="...">
+    </div> -->
+    <div class="container-md  mx-auto py-4  main">
+        <div class="row gx-0">
+            <div class="col-sm item">
+                <h1 class="mx-5 py-4">Corsi di ricamo e cucito</h1>
+            </div>
+
+            <div class="col-sm item">
+                <h1 class="mx-5 py-4">Riparazione tessuti e vestiti</h1>
+            </div>
+
+            <div class="col-sm item">
+                <h1 class="mx-5 py-4">Altro che fa l'attività</h1>
+            </div>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
 
+    <div *ngIf="mostra" id="carouselExampleFade" class="carousel slide carousel-fade customCarousel mx-auto my-5"
+        data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/Filati1000.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/lana.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/filo-bg-blue.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
 </div>
 <!-- <div *ngIf="!mostra">
     <app-prodotti (nascondiFoto)="nascondiFoto($event)"></app-prodotti>

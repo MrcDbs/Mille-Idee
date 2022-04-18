@@ -22,12 +22,20 @@
 } */
 
 .lnk:hover .card {
-    opacity: 0.85;
+    /* opacity: 0.85; */
     /* filter: blur(1px); */
+    filter: brightness(85%);
+}
+
+.lnk {
+    transition: .5s ease-in-out;
 }
 
 .lnk:hover .middle {
     opacity: 1;
+    /* filter: brightness(90%); */
+    /* color: white; */
+
 }
 
 .lnk:hover .card-title {
@@ -45,4 +53,12 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+}
+
+#h2 {
+    text-align: center;
+    color: #305fab;
+    font-size: 80px;
+    font-family: "Gill Sans";
+
 }

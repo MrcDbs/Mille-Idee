@@ -1,26 +1,37 @@
-/* .mt-sm {
-    margin-top: 95px;
-}
-
-.mt {
-    margin-top: 105px;
-}
-
-.mt-md {
-    margin-top: 75px;
-} */
-
-
-
-
-
-/* .customCarousel {
-    width: 95%;
-} */
-
-/* #hr1 {
-    width: 500px;
-    height: 5px;
-    color: black;
+.item {
+    /* text-shadow: 2px 2px 2px #0066cc; */
+    font-family: "Gill Sans";
+    color: white;
+    border-bottom: 1px solid #f5e6b8;
+    border-top: 1px solid #f5e6b8;
     text-align: center;
+
+
+
+}
+
+/* #middle {
+     border-right: 1px solid white;
+    border-left: 1px solid white; 
+} */
+
+.main {
+    /* background-color: #203c73;*/
+
+    border-radius: 5px;
+}
+
+.bg {
+    background-color: #203c73;
+    opacity: 0.97;
+}
+
+/* .vr {
+    width: 100px;  
+    border: 0.3px solid white;
+    color: white;
+    opacity: 1;
+    padding: 0 0 0 0;
+     height: 160px;
+
 } */
