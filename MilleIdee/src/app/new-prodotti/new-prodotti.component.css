@@ -57,8 +57,13 @@
 
 #h2 {
     text-align: center;
-    color: #305fab;
-    font-size: 80px;
+    color: white;
+    font-size: 60px;
     font-family: "Gill Sans";
+    /* font-family: "Bradley Hand"; */
+}
 
+.cont {
+    /* background-color: #305fab; */
+    background-color: #203c73;
 }

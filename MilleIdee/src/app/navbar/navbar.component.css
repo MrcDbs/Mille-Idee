@@ -18,8 +18,12 @@
     /* font-family: "Chalkduster"; */
     font-family: "Gill Sans";
     font-size: 35px;
+
 }
 
+#cnt {
+    background-color: #e9f1f2;
+}
 
 #offcanvasTopLabel {
     color: white;
@@ -29,7 +33,7 @@
 }
 
 #offcanvasTop {
-    background-color: #505d94;
+    background-color: #203c73;
 }
 
 #offcanvasStart {
@@ -43,6 +47,10 @@
     font-size: 20px;
 }
 
+#offcanvasRight {
+    background-color: #e9f1f2;
+}
+
 .btt {
     background-color: white
 }
@@ -51,6 +59,7 @@
     width: 40%;
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
     font-family: "Gill Sans";
+
 }
 
 #leftLink:hover {

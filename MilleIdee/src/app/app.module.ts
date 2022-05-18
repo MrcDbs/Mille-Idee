@@ -14,6 +14,7 @@ import { OrariComponent } from './orari/orari.component';
 import { OffcanvasComponent } from './offcanvas/offcanvas.component';
 import { NewProdottiComponent } from './new-prodotti/new-prodotti.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
+import { ListaMarcaProdottiComponent } from './lista-marca-prodotti/lista-marca-prodotti.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
     OrariComponent,
     OffcanvasComponent,
     NewProdottiComponent,
-    PhotoGalleryComponent
+    PhotoGalleryComponent,
+    ListaMarcaProdottiComponent
   ],
   imports: [
     BrowserModule,
