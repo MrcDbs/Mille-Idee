@@ -6,8 +6,9 @@
 }
 
 #leftLink {
-    color: #305fab;
-    font-size: 15px;
+    /* color: #305fab; */
+    color: #e9f1f2;
+    font-size: 20px;
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
     font-family: "Gill Sans";
 }
@@ -59,8 +60,6 @@
     /* width: 40%; */
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
     font-family: "Gill Sans";
-
-
 }
 
 #leftLink:hover {
@@ -70,3 +69,21 @@
 /* a:hover {
     font-style: #3293a8;
 } */
+
+.menu-button {
+    margin-left: 150px;
+
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.lnk,
+#prod1,
+#prod2,
+#prod3,
+#prod4,
+#prod5 {
+    color: white;
+}
