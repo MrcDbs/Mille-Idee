@@ -2,8 +2,7 @@
     /* text-shadow: 2px 2px 2px #0066cc; */
     font-family: "Gill Sans";
     color: white;
-    border-bottom: 1px solid #f5e6b8;
-    border-top: 1px solid #f5e6b8;
+    border-bottom: 2px solid #f5e6b8;
     text-align: center;
 
 
@@ -17,12 +16,14 @@
 
 .main {
     /* background-color: #203c73;*/
-
-    border-radius: 5px;
+    /* margin-top: 20px;
+    
+    border-top: 1px solid #f5e6b8; */
 }
 
 .bg {
-    background-color: #203c73;
+    /* background-color: #203c73; */
+    background-color: #6387bf;
     opacity: 0.97;
 }
 
