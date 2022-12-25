@@ -1,14 +1,15 @@
 #h1 {
-
+    /* color: #0a3873; */
     /* font-family: "Brush Script MT"; */
     /* font-family: "Courier New"; */
-
+    text-shadow: 2px 2px 5px #0a3873;
     /* margin-bottom: 15px; */
     font-size: 120px;
     /* margin-top: 65px; */
 }
 
 #h2 {
+    text-shadow: 2px 2px 5px #0a3873;
     /* font-family: "Luminari"; */
     /* font-family: "Courier New"; */
     font-size: 35px;

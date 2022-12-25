@@ -5,15 +5,19 @@
         <a class="navbar-brand lnk" routerLink="" data-bs-toggle="tooltip" data-bs-placement="bottom"
             title="Homepage">Home</a>
 
+        <!-- <a class="navbar-toggler menu-button" href="#" role="button" id="navbarNavAltMarkup"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </a> -->
         <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarNavAltMarkup"> -->
+            <div class="navbar-nav ">
                 <a class="nav-link" id="prod1" aria-current="page" routerLink="/new-prodotti" data-bs-toggle="tooltip"
-                    data-bs-placement="bottom" title="List of Products">Products</a>
+                    data-bs-placement="bottom" title="List of Products" (click)="collapseHide()">Products</a>
                 <a class="nav-link" id="prod2" routerLink="/gallery" data-bs-toggle="tooltip" data-bs-placement="bottom"
                     title="Photogallery">Photos</a>
                 <a class="nav-link" id="prod3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -25,28 +29,30 @@
             </div>
         </div>
 
-
-
-
-        <!-- <span id="txt" class="navbar-nav ml-auto">LANA - FILATI - TESSUTI - MERCERIA - INTIMO</span> -->
-
-        <a class="nav-link lk" id="leftLink" data-bs-toggle="modal" data-bs-target="#exampleModal1" href="">LANA</a>
-
-        <a class="nav-link lk" id="leftLink" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="">FILATI
-        </a>
-
-        <a class="nav-link lk" id="leftLink" data-bs-toggle="modal" data-bs-target="#exampleModal3" href="">MERCERIA</a>
+    </div>
 
 
 
 
-        <!-- <a class="nav-link lk" id="leftLink" data-bs-toggle="modal"
+    <!-- <span id="txt" class="navbar-nav ml-auto">LANA - FILATI - TESSUTI - MERCERIA - INTIMO</span> -->
+
+    <a class="nav-link lk" id="leftLink" data-bs-toggle="modal" data-bs-target="#exampleModal1" href="">LANA</a>
+
+    <a class="nav-link lk" id="leftLink" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="">FILATI
+    </a>
+
+    <a class="nav-link lk" id="leftLink" data-bs-toggle="modal" data-bs-target="#exampleModal3" href="">MERCERIA</a>
+
+
+
+
+    <!-- <a class="nav-link lk" id="leftLink" data-bs-toggle="modal"
             data-bs-target="#exampleModal4" href="">TESSUTI</a><a class="nav-link lk" id="leftLink"
             data-bs-toggle="modal" data-bs-target="#exampleModal5" href="">INTIMO</a> -->
 
 
 
-    </div>
+
 </nav>
 <!-- <a class="nav-link leftLink" data-bs-toggle="modal" data-bs-target="#exampleModal1" href="">LANA</a> - -->
 

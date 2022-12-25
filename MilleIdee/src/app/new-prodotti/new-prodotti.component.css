@@ -58,8 +58,14 @@
 #h2 {
     text-align: center;
     color: white;
-    font-size: 60px;
+    font-size: 75px;
     font-family: "Gill Sans";
+    margin-bottom: 15px;
+    box-shadow: 0 3px 3px #0a3873;
+    /* text-shadow: 2px 2px 5px #0a3873; */
+    background-color: #406094;
+    border-radius: 10px;
+    /* width: 50%; */
     /* font-family: "Bradley Hand"; */
 }
 
@@ -68,3 +74,7 @@
     /* background-color: #203c73; */
     background-color: #6387bf;
 }
+
+/* .title {
+    
+} */
