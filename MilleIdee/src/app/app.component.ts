@@ -11,6 +11,15 @@ export class AppComponent {
   @Output()
   mostra: boolean = true;
 
+  onActivate(event: any) {
+    // window.scroll(0,0);
+    console.log('activated ', event);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 
 
 }

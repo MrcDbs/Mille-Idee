@@ -1,25 +1,64 @@
 .li {
     background-color: #203c73;
     opacity: 0.90;
+    border: none;
 
+}
+
+.main-body {
+    background-color: #203c73;
+    transition-delay: 250ms;
+
+    opacity: 95%;
+}
+
+.c-body {
+    height: 250px;
+}
+
+.bd {
+    padding-right: 5px;
+}
+
+/* .card-slot {
+    background-color: #0f2269;
+} */
+
+#txt {
+    /* color: #0b355e; */
+    color: white;
+    /* background-color: white; */
+    background-color: #5a3c80;
+    font-size: 20px;
 }
 
 /* .bt {
     
 
-    border-color: #203c73;
+    border-color: #203c73;~+
     background-color: white;
     color: #203c73;
     font-family: "Gill Sans";
     font-size: 25px;
 } */
 
+.all-c:hover {
+    border-color: #0b355e;
+
+    /* &>#txt {
+        color: white;
+        
+    background-color: #0b355e;
+    font-size: 20px;
+    }*/
+}
+
 .btDiv {
     text-align: center;
 }
 
 .bt:hover {
-    background-color: #203c73;
+    background-color: #3376b8;
     color: white;
-    border-color: #203c73;
+    border-color: #3376b8;
 }

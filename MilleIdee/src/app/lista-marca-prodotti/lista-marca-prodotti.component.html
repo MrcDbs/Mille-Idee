@@ -1,23 +1,44 @@
-<ul class="list-group list-group-flush  ">
-    <li class="list-group-item li">
-        <div class="card text-center gy-2">
-            <div class="card-header">
-                Lana
+<div class="main-body">
+    <ul class="list-group list-group-flush  ">
+        <div class="row">
+            <div class="col-sm-4" *ngFor="let p of listaProdotti">
+                <li class="list-group-item li">
+                    <div class="card text-center all-c">
+                        <!-- <div class="modal-body"> -->
+                        <div class="card-header all-c" id="txt">
+                            {{productValue}}
+                        </div>
+                        <!-- "assets/img/lana2.jpeg" -->
+                        <img class="card-img-top c-body" src="assets/img/expImg/{{p.image}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{p.marca}}</h5>
+                            <p class="card-text">{{p.composizione}}</p>
+                            <a href="#" class="btn btn-outline-primary bt">Dettagli</a>
+                        </div>
+                        <!-- </div> -->
+                    </div>`
+                    <!-- <div class="card text-left gy-2 card-slot">
+                        <div class="card-header txt">
+                            {{productValue}}
+                        </div>
+                        <div class="card-body bd">
+                            <h5 class="card-title">{{p.marca}}</h5>
+                            <p class="card-text">{{p.composizione}}</p>
+                            <a href="#" class="btn btn-outline-primary bt">Dettagli</a>
+                            <img class="card-img-top" src="../assets/img/lana2.jpeg" alt="Card image" width="140px"
+                                height="130px" style="margin-left:5px;">
+                        </div>
+
+                    </div> -->
+
+                </li>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Marca 1</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-outline-primary bt">Go somewhere</a>
-            </div>
-            <div class="card-footer text-muted">
-                2 days ago
-            </div>
-        </div>
-    </li>
-    <li class="list-group-item li">
+
+
+            <!-- <li class="list-group-item li">
         <div class="card text-center">
             <div class="card-header">
-                Lana
+                {{productValue}}
             </div>
             <div class="card-body">
                 <h5 class="card-title">Marca 2</h5>
@@ -28,15 +49,17 @@
                 2 days ago
             </div>
         </div>
-    </li>
-    <!-- <li class="list-group-item">Marca 3</li>
+    </li> -->
+            <!-- <li class="list-group-item">Marca 3</li>
     <li class="list-group-item">Marca 4</li>
     <li class="list-group-item">Marca 5</li> -->
-</ul>
-<div class="btDiv py-3 mb-3 mx-auto">
-    <a routerLink="/new-prodotti" class="btn btn-outline-primary   bt">Indietro</a>
-</div>
+        </div>
+    </ul>
 
+    <div class="btDiv py-3 mb-3 mx-auto">
+        <a [routerLink]="['/new-prodotti']" class="btn btn-outline-primary   bt">Indietro</a>
+    </div>
+</div>
 <!-- <ul class="list-group">
     <li class="list-group-item d-flex justify-content-between align-items-center">
         Cras justo odio
