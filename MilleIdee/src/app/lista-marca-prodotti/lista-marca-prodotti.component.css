@@ -8,7 +8,7 @@
     /* background-color: #288f9e; */
     background: linear-gradient(110deg, #113d5e 60%, white 60%);
     transition-delay: 250ms;
-    border-top: 7px solid #075a66;
+    border-top: 7px solid #072439;
     opacity: 95%;
     padding-top: 30px;
     /* GREEN #62cc62 */
@@ -44,9 +44,9 @@
     font-size: 25px;
 } */
 .all-c {
-    background-color: #288f9e;
+    background-color: #6387bf;
     border: none;
-    opacity: 80%;
+    opacity: 95%;
     transition: transform 550ms;
     box-shadow: -5px 0 5px -5px #0a3873, 5px 0 5px -5px #0a3873, 0 3px 5px #0a3873;
 }
