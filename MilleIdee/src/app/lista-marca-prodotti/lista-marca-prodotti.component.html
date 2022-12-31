@@ -2,18 +2,19 @@
     <ul class="list-group list-group-flush  ">
         <div class="row">
             <div class="col-sm-4" *ngFor="let p of listaProdotti">
-                <li class="list-group-item li">
+                <li class="list li">
                     <div class="card text-center all-c">
                         <!-- <div class="modal-body"> -->
-                        <div class="card-header" id="txt">
+                        <!-- <div class="card-header all-c" id="txt">
                             {{productValue}}
-                        </div>
+                        </div> -->
                         <!-- "assets/img/lana2.jpeg" -->
                         <img class="card-img-top c-body" src="assets/img/expImg/{{p.image}}" alt="Card image cap">
                         <div class="card-body" id="txt">
                             <h5 class="card-title">{{p.marca}}</h5>
                             <p class="card-text">{{p.composizione}}</p>
-                            <a href="#" class="btn btn-outline-primary bt">Dettagli</a>
+                            <p class="par">Click for details</p>
+                            <!-- <a href="#" class="btn btn-outline-primary bt">Dettagli</a> -->
                         </div>
                         <!-- </div> -->
                     </div>`

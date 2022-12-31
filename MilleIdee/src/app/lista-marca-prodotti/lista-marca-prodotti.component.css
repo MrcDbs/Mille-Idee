@@ -1,16 +1,18 @@
-.li {
-    background-color: #3b728f;
-    /* background-color: #0f435e; */
-    opacity: 0.90;
+/* .li {
+    background-color: #288f9e;
+    opacity: 0.9;
     border: none;
-
 }
 
+*/
 .main-body {
-    background-color: #3b728f;
+    /* background-color: #288f9e; */
+    background: linear-gradient(110deg, #113d5e 60%, white 60%);
     transition-delay: 250ms;
-    border-top: 5px solid #07354d;
+    border-top: 7px solid #075a66;
     opacity: 95%;
+    padding-top: 30px;
+    /* GREEN #62cc62 */
 }
 
 .c-body {
@@ -29,7 +31,7 @@
     /* color: #0b355e; */
     color: white;
     /* background-color: white; */
-    background-color: #07354d;
+    background-color: #6387bf;
     font-size: 20px;
     border-radius: 20px;
 
@@ -45,13 +47,19 @@
     font-size: 25px;
 } */
 .all-c {
-    border-color: #3b728f;
-
-    background-color: #07354d;
+    background-color: #288f9e;
+    border: none;
+    opacity: 80%;
+    transition: transform 550ms;
+    box-shadow: -5px 0 5px -5px #0a3873, 5px 0 5px -5px #0a3873, 0 3px 5px #0a3873;
 }
 
 .all-c:hover {
-    border-color: white;
+    background-color: #2e4b78;
+    transform: translateY(-10px);
+    /* border-color: white; */
+    opacity: 100%;
+    cursor: pointer;
 
     /* &>#txt {
         color: white;

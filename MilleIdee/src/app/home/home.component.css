@@ -1,4 +1,6 @@
-.item {
+.item1,
+.item2,
+.item3 {
     /* text-shadow: 2px 2px 2px #0066cc; */
     font-family: "Gill Sans";
     color: white;
@@ -9,9 +11,22 @@
 
 }
 
-.item:hover {
+.item1:hover {
     background-color: #2e4b78;
     transform: translateY(-10px);
+    color: #62cc62;
+}
+
+.item2:hover {
+    background-color: #2e4b78;
+    transform: translateY(-10px);
+    color: #f7ce2a;
+}
+
+.item3:hover {
+    background-color: #2e4b78;
+    transform: translateY(-10px);
+    color: #e65c40e2;
 }
 
 /* #middle {

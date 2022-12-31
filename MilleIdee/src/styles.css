@@ -5,8 +5,9 @@ body {
     /* background-color: #305fab;   MAIN COLOR*/
     /* background-color: #205473; */
     /* background-color: lightgrey; */
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background: linear-gradient(110deg, white 60%, #113d5e 60%);
 }
 
 .bt {
