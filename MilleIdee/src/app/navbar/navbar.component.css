@@ -87,3 +87,7 @@
 #prod5 {
     color: white;
 }
+
+.nb {
+    background: linear-gradient(110deg, #406094 60%, #113d5e 60%);
+}
