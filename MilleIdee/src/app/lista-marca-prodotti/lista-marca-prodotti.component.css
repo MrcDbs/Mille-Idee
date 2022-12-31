@@ -1,14 +1,15 @@
 .li {
-    background-color: #203c73;
+    background-color: #3b728f;
+    /* background-color: #0f435e; */
     opacity: 0.90;
     border: none;
 
 }
 
 .main-body {
-    background-color: #203c73;
+    background-color: #3b728f;
     transition-delay: 250ms;
-
+    border-top: 5px solid #07354d;
     opacity: 95%;
 }
 
@@ -28,8 +29,10 @@
     /* color: #0b355e; */
     color: white;
     /* background-color: white; */
-    background-color: #5a3c80;
+    background-color: #07354d;
     font-size: 20px;
+    border-radius: 20px;
+
 }
 
 /* .bt {
@@ -41,9 +44,14 @@
     font-family: "Gill Sans";
     font-size: 25px;
 } */
+.all-c {
+    border-color: #3b728f;
+
+    background-color: #07354d;
+}
 
 .all-c:hover {
-    border-color: #0b355e;
+    border-color: white;
 
     /* &>#txt {
         color: white;
