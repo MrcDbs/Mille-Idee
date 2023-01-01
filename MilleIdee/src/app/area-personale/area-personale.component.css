@@ -1,0 +1,9 @@
+.btDiv {
+    text-align: center;
+}
+
+.bt:hover {
+    background-color: #3376b8;
+    color: white;
+    border-color: #3376b8;
+}
