@@ -20,6 +20,7 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { AreaPersonaleComponent } from './area-personale/area-personale.component';
 import { LogInFormComponent } from './log-in-form/log-in-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 
 
 export function tokenGetter() {

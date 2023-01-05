@@ -69,3 +69,48 @@
     color: white;
     border-color: #3376b8;
 }
+
+#myTab {
+    margin-bottom: 20px;
+}
+
+.nav-link:focus {
+    background-color: #2e4b78;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 30px;
+}
+
+.ricerca {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    width: 50%;
+    transition: 2s;
+    /* display: none; */
+}
+
+
+
+
+#la-bel {
+    color: white;
+    font-size: 40px;
+}
+
+.list-content {
+    padding-top: 20px;
+    border-top: 2px solid #2e4b78;
+    transition: 2s;
+}
+
+.list-group {
+    list-style: none;
+}
+
+#in {
+    width: 20%;
+}

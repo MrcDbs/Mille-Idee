@@ -15,8 +15,8 @@ export class AppComponent {
     // window.scroll(0,0);
     console.log('activated ', event);
     window.scroll({
-      top: 0,
-      left: 0,
+      top: 200,
+      left: 200,
       behavior: 'smooth'
     });
   }

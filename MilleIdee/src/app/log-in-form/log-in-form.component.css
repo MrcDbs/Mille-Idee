@@ -28,7 +28,8 @@
 .f-l {
     /* background-color: white; */
     /* background-color: #406094; */
-    background: linear-gradient(110deg, #113d5e 60%, white 60%);
+    background: linear-gradient(120deg, #406094 60%, white 60%);
+
     /* margin-left: 525px;
     margin-right: 525px; */
     width: 350px;
