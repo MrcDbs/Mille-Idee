@@ -9,7 +9,7 @@
     /* background-color: #288f9e; */
     background: linear-gradient(110deg, #113d5e 60%, white 60%);
     transition-delay: 250ms;
-    border-top: 7px solid #075a66;
+    border-top: 7px solid #072439;
     opacity: 95%;
     padding-top: 30px;
     /* GREEN #62cc62 */
@@ -47,9 +47,9 @@
     font-size: 25px;
 } */
 .all-c {
-    background-color: #288f9e;
+    background-color: #6387bf;
     border: none;
-    opacity: 80%;
+    opacity: 95%;
     transition: transform 550ms;
     box-shadow: -5px 0 5px -5px #0a3873, 5px 0 5px -5px #0a3873, 0 3px 5px #0a3873;
 }
@@ -61,12 +61,6 @@
     opacity: 100%;
     cursor: pointer;
 
-    /* &>#txt {
-        color: white;
-        
-    background-color: #0b355e;
-    font-size: 20px;
-    }*/
 }
 
 .btDiv {
@@ -77,4 +71,49 @@
     background-color: #3376b8;
     color: white;
     border-color: #3376b8;
+}
+
+#myTab {
+    margin-bottom: 20px;
+}
+
+.nav-link:focus {
+    background-color: #2e4b78;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 30px;
+}
+
+.ricerca {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    width: 50%;
+    transition: 2s;
+    /* display: none; */
+}
+
+
+
+
+#la-bel {
+    color: white;
+    font-size: 40px;
+}
+
+.list-content {
+    padding-top: 20px;
+    border-top: 2px solid #2e4b78;
+    transition: 2s;
+}
+
+.list-group {
+    list-style: none;
+}
+
+#in {
+    width: 20%;
 }

@@ -1,61 +1,110 @@
+<div class="d-flex justify-content-center" *ngIf="isLoading">
+    <div class="spinner-border text-primary" role="status">
+    </div>
+</div>
 <div class="main-body">
-    <ul class="list-group list-group-flush  ">
-        <div class="row">
-            <div class="col-sm-4" *ngFor="let p of listaProdotti">
-                <li class="list li">
-                    <div class="card text-center all-c">
-                        <!-- <div class="modal-body"> -->
-                        <!-- <div class="card-header all-c" id="txt">
-                            {{productValue}}
-                        </div> -->
-                        <!-- "assets/img/lana2.jpeg" -->
-                        <img class="card-img-top c-body" src="assets/img/expImg/{{p.image}}" alt="Card image cap">
-                        <div class="card-body" id="txt">
-                            <h5 class="card-title">{{p.marca}}</h5>
-                            <p class="card-text">{{p.composizione}}</p>
-                            <p class="par">Click for details</p>
-                            <!-- <a href="#" class="btn btn-outline-primary bt">Dettagli</a> -->
-                        </div>
-                        <!-- </div> -->
-                    </div>`
-                    <!-- <div class="card text-left gy-2 card-slot">
-                        <div class="card-header txt">
-                            {{productValue}}
-                        </div>
-                        <div class="card-body bd">
-                            <h5 class="card-title">{{p.marca}}</h5>
-                            <p class="card-text">{{p.composizione}}</p>
-                            <a href="#" class="btn btn-outline-primary bt">Dettagli</a>
-                            <img class="card-img-top" src="../assets/img/lana2.jpeg" alt="Card image" width="140px"
-                                height="130px" style="margin-left:5px;">
-                        </div>
-
-                    </div> -->
-
-                </li>
-            </div>
-
-
-            <!-- <li class="list-group-item li">
-        <div class="card text-center">
-            <div class="card-header">
-                {{productValue}}
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Marca 2</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-outline-primary bt">Go somewhere</a>
-            </div>
-            <div class="card-footer text-muted">
-                2 days ago
-            </div>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per grammi</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="profile-tab" (click)="showForm('c')">Ricerca per composizione</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="tutti-tab" (click)="getListaProdotti()">Tutti</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="contact-tab" data-toggle="tab" role="tab" aria-controls="contact"
+                    aria-selected="false">Filtri</button>
+            </li>
+        </ul>
+    </div>
+    <!-- [ngStyle]="{'display':showF?'block':'none'}" -->
+    <div class="container ricerca" *ngIf="showFGrammi">
+        <div class="input-group">
+            <label id="la-bel">Grammi: </label>
+            <input type="number" [(ngModel)]="grammi" class="in" max="20" min="1">
+            <button class="btn btn-outline-primary   bt" (click)="cercaByGrammi()">Cerca</button>
         </div>
-    </li> -->
-            <!-- <li class="list-group-item">Marca 3</li>
-    <li class="list-group-item">Marca 4</li>
-    <li class="list-group-item">Marca 5</li> -->
+    </div>
+    <div class="container ricerca" *ngIf="showFComp">
+        <div class="input-group">
+            <label id="la-bel">Composizione: </label>
+            <!-- <input type="text" (ngModel)="composizione" class="in"> -->
+            <select [(ngModel)]="composizione" class="in">
+                <option value="Lana">Lana</option>
+                <option value="Acrilico">Acrilico</option>
+                <option value="Cotone">Cotone</option>
+                <option value="Lana,Acrilico">Lana - Acrilico</option>
+                <option value="Lana,Cotone">Lana - Cotone</option>
+                <option value="Pura Lana">Pura Lana</option>
+            </select>
+            <button class="btn btn-outline-primary   bt" (click)="cercaByComposizione()">Cerca</button>
         </div>
-    </ul>
+    </div>
+    <div class="container list-content">
+        <ul class="list-group list-group-flush  ">
+            <div class="row">
+                <div class="col-sm-4" *ngFor="let p of listaProdotti">
+                    <li class="list li">
+                        <div class="card text-center all-c">
+                            <!-- <div class="modal-body"> -->
+                            <!-- <div class="card-header all-c" id="txt">
+                                    {{productValue}}
+                                </div> -->
+                            <!-- "assets/img/lana2.jpeg" -->
+                            <img class="card-img-top c-body" src="assets/img/expImg/{{p.image}}" alt="Card image cap">
+                            <div class="card-body" id="txt">
+                                <h5 class="card-title">{{p.marca}}</h5>
+                                <p class="card-text">{{p.composizione}}</p>
+                                <p class="par">Click for details</p>
+                                <!-- <a href="#" class="btn btn-outline-primary bt">Dettagli</a> -->
+                            </div>
+                            <!-- </div> -->
+                        </div>`
+                        <!-- <div class="card text-left gy-2 card-slot">
+                                <div class="card-header txt">
+                                    {{productValue}}
+                                </div>
+                                <div class="card-body bd">
+                                    <h5 class="card-title">{{p.marca}}</h5>
+                                    <p class="card-text">{{p.composizione}}</p>
+                                    <a href="#" class="btn btn-outline-primary bt">Dettagli</a>
+                                    <img class="card-img-top" src="../assets/img/lana2.jpeg" alt="Card image" width="140px"
+                                        height="130px" style="margin-left:5px;">
+                                </div>
+        
+                            </div> -->
+
+                    </li>
+                </div>
+
+
+                <!-- <li class="list-group-item li">
+                <div class="card text-center">
+                    <div class="card-header">
+                        {{productValue}}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Marca 2</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-outline-primary bt">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+            </li> -->
+                <!-- <li class="list-group-item">Marca 3</li>
+            <li class="list-group-item">Marca 4</li>
+            <li class="list-group-item">Marca 5</li> -->
+            </div>
+        </ul>
+
+
+    </div>
+
 
     <div class="btDiv py-3 mb-3 mx-auto">
         <a [routerLink]="['/new-prodotti']" class="btn btn-outline-primary   bt">Indietro</a>

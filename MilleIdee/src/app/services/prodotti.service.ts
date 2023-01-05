@@ -76,10 +76,26 @@ export class ProdottiService {
   private BASE_URL = 'http://localhost:8080/lanaController';
 
   private getListaURL = this.BASE_URL + '/getAllLana';
+  private getByGrammiURL = this.BASE_URL + '/getByGrammi/';
+  private getByComposizioneURL = this.BASE_URL + '/getByComposizione/';
+
   constructor(private httpClient: HttpClient) { }
 
   getLanaLista(): Observable<ILana[]> {
     return this.httpClient.get<ILana[]>(this.getListaURL)
+      .pipe(
+        catchError((error) => throwError(() => error))
+      )
+  }
+
+  findByGrammi(grammi: number): Observable<ILana[]> {
+    return this.httpClient.get<ILana[]>(this.getByGrammiURL + grammi)
+      .pipe(
+        catchError((error) => throwError(() => error))
+      )
+  }
+  findByComposizione(comp: string): Observable<ILana[]> {
+    return this.httpClient.get<ILana[]>(this.getByComposizioneURL + comp)
       .pipe(
         catchError((error) => throwError(() => error))
       )

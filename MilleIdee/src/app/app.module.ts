@@ -16,6 +16,16 @@ import { OffcanvasComponent } from './offcanvas/offcanvas.component';
 import { NewProdottiComponent } from './new-prodotti/new-prodotti.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { ListaMarcaProdottiComponent } from './lista-marca-prodotti/lista-marca-prodotti.component';
+import { JwtModule } from '@auth0/angular-jwt';
+import { AreaPersonaleComponent } from './area-personale/area-personale.component';
+import { LogInFormComponent } from './log-in-form/log-in-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
+
+
+export function tokenGetter() {
+  return localStorage.getItem('token');
+}
 
 @NgModule({
   declarations: [
@@ -31,12 +41,25 @@ import { ListaMarcaProdottiComponent } from './lista-marca-prodotti/lista-marca-
     OffcanvasComponent,
     NewProdottiComponent,
     PhotoGalleryComponent,
-    ListaMarcaProdottiComponent
+    ListaMarcaProdottiComponent,
+    AreaPersonaleComponent,
+    LogInFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    JwtModule.forRoot({
+      // HTTP_INTERCEPTOR (aggiunge l'Authorization header con Bearer token JWT)
+      config: {
+        tokenGetter,
+        allowedDomains: ['http://localhost:91/user/'],
+        disallowedRoutes: ['http://localhost:8080/signIn']
+      },
+    }),
+    // FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
