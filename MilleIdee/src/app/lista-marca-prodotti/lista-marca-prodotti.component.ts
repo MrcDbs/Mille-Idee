@@ -20,15 +20,17 @@ export class ListaMarcaProdottiComponent implements OnInit {
   showFComp = false;
   grammi: number = 0;
   composizione: string = '';
+  listaFlauto?: any[];
 
   ngOnInit(): void {
     this.getListaProdotti();
+    this.listaFlauto = this.prodottiService.listaFlauto;
 
   }
-  // getListaProdotti() {
-  //   this.productValue = this.route.snapshot.paramMap.get('product');
-  //   this.listaProdotti = this.prodottiService.lanaLista;
-  // }
+  getListaProdotti() {
+    this.productValue = this.route.snapshot.paramMap.get('product');
+    this.listaProdotti = this.prodottiService.lanaLista;
+  }
 
   cercaByGrammi() {
     console.log('GRAMMI ', this.grammi);
@@ -47,28 +49,32 @@ export class ListaMarcaProdottiComponent implements OnInit {
       });
 
   }
-  getListaProdotti() {
-    this.isLoading = true;
-    this.productValue = this.route.snapshot.paramMap.get('product');
-    if (this.productValue === 'Lana') {
-      console.log('1');
-      this.prodottiService.getLanaLista()
-        .subscribe({
-          next: (response) => {
-            this.listaProdotti = response;
-            console.log('LISTA ', this.listaProdotti);
-            this.isLoading = false;
-            this.showFGrammi = false;
-            this.showFComp = false;
-          },
-          error: (error) => {
-            this.isLoading = false;
-            console.error('ERROR !!! - ' + error.status);
-          }
-        });
-    }
-    //console.log('product VALUE ', this.productValue);
+
+  openListaClicked() {
+
   }
+  // getListaProdotti() {
+  //   this.isLoading = true;
+  //   this.productValue = this.route.snapshot.paramMap.get('product');
+  //   if (this.productValue === 'Lana') {
+  //     console.log('1');
+  //     this.prodottiService.getLanaLista()
+  //       .subscribe({
+  //         next: (response) => {
+  //           this.listaProdotti = response;
+  //           console.log('LISTA ', this.listaProdotti);
+  //           this.isLoading = false;
+  //           this.showFGrammi = false;
+  //           this.showFComp = false;
+  //         },
+  //         error: (error) => {
+  //           this.isLoading = false;
+  //           console.error('ERROR !!! - ' + error.status);
+  //         }
+  //       });
+  //   }
+  //   //console.log('product VALUE ', this.productValue);
+  // }
 
   showForm(param: any) {
     if (param === 'g') {

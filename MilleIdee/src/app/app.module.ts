@@ -20,6 +20,8 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { AreaPersonaleComponent } from './area-personale/area-personale.component';
 import { LogInFormComponent } from './log-in-form/log-in-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ListaDettaglioComponent } from './lista-dettaglio/lista-dettaglio.component';
+import { ModaFotoDettaglioComponent } from './moda-foto-dettaglio/moda-foto-dettaglio.component';
 // import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 
 
@@ -43,7 +45,9 @@ export function tokenGetter() {
     PhotoGalleryComponent,
     ListaMarcaProdottiComponent,
     AreaPersonaleComponent,
-    LogInFormComponent
+    LogInFormComponent,
+    ListaDettaglioComponent,
+    ModaFotoDettaglioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,70 @@
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large
+    modal</button> -->
+
+<div class="modal fade" id="bd-example-modal-lg" tabindex=" -1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+
+        <div class="container modal-content cont">
+            <div class="modal-header hd">
+                <h4 id="hd2">{{marca}}</h4>
+                <button type="button" class="btn-close butt" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <table class="table">
+                <thead class="table-light">
+                    <th>#</th>
+                    <th>Tipo</th>
+                    <th>Composizione</th>
+                    <th>Colore</th>
+                    <th>Grammi</th>
+                    <th>Prezzo</th>
+                    <th>Foto</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of listaProdotti">
+                        <td>{{p.id}}</td>
+                        <td>{{p.tipo}}</td>
+                        <td>{{p.composizione}}</td>
+                        <td>{{p.colore}}</td>
+                        <td>{{p.grammi}}</td>
+                        <td>&euro; {{p.prezzo}}</td>
+                        <td>
+                            <div data-mdb-toggle="modal" attr.data-mdb-target="'#exampleModal'{{p.id}}">
+                                <img style="width:8em; height:5em;cursor:pointer;" src="{{p.foto}}">
+                            </div>
+                        </td>
+                        <!-- <td>
+                            <div class="modal fade" id="exampleModal{{p.id}}" tabindex="-1"
+                                aria-labelledby="exampleModal1Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="{{p.foto}}" title="Flauto" allowfullscreen></iframe>
+                                        </div>
+
+                                        <div class="text-center py-3">
+                                            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td> -->
+                        <div class="modal fade" id=p.id tabindex=" -1" role="dialog" aria-labelledby="myLargeModalPhoto"
+                            aria-hidden="true">
+                            <div class="container modal-dialog modal-lg">
+
+                                <div class="modal-content">
+                                    <h1>Header of modal</h1>
+                                    <img src="{{p.foto}}">
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>

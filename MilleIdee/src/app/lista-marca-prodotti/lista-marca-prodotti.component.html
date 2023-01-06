@@ -24,7 +24,7 @@
     <div class="container ricerca" *ngIf="showFGrammi">
         <div class="input-group">
             <label id="la-bel">Grammi: </label>
-            <input type="number" [(ngModel)]="grammi" class="in" max="20" min="1">
+            <input type="number" [(ngModel)]="grammi" class="in" max="200" min="5">
             <button class="btn btn-outline-primary   bt" (click)="cercaByGrammi()">Cerca</button>
         </div>
     </div>
@@ -47,7 +47,7 @@
         <ul class="list-group list-group-flush  ">
             <div class="row">
                 <div class="col-sm-4" *ngFor="let p of listaProdotti">
-                    <li class="list li">
+                    <li class="list li" data-bs-toggle="modal" data-bs-target="#bd-example-modal-lg">
                         <div class="card text-center all-c">
                             <!-- <div class="modal-body"> -->
                             <!-- <div class="card-header all-c" id="txt">
@@ -57,8 +57,11 @@
                             <img class="card-img-top c-body" src="assets/img/expImg/{{p.image}}" alt="Card image cap">
                             <div class="card-body" id="txt">
                                 <h5 class="card-title">{{p.marca}}</h5>
-                                <p class="card-text">{{p.composizione}}</p>
-                                <p class="par">Click for details</p>
+
+                                <p class="par">Click for
+                                    details</p>
+                                <!-- <button type="button" class="btn btn-outline-primary   bt" data-bs-toggle="modal"
+                                    data-bs-target="#bd-example-modal-lg">Click for details</button> -->
                                 <!-- <a href="#" class="btn btn-outline-primary bt">Dettagli</a> -->
                             </div>
                             <!-- </div> -->
@@ -110,6 +113,8 @@
         <a [routerLink]="['/new-prodotti']" class="btn btn-outline-primary   bt">Indietro</a>
     </div>
 </div>
+
+<app-lista-dettaglio [listaProdotti]="listaFlauto"></app-lista-dettaglio>
 <!-- <ul class="list-group">
     <li class="list-group-item d-flex justify-content-between align-items-center">
         Cras justo odio

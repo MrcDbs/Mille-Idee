@@ -33,7 +33,7 @@
     /* background-color: white; */
     background-color: #6387bf;
     font-size: 20px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 
 }
 
@@ -68,7 +68,7 @@
 }
 
 .bt:hover {
-    background-color: #3376b8;
+    background-color: #2e4b78;
     color: white;
     border-color: #3376b8;
 }

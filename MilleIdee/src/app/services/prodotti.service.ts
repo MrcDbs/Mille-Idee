@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, throwError } from 'rxjs';
 import { ILana } from '../model/lana';
+import { lista_flauto } from '../model/flauto';
 
 @Injectable({
   providedIn: 'root'
@@ -71,6 +72,7 @@ export class ProdottiService {
   filatiLista?: any[];
   merceria?: [];
   tessutiLista?: any[];
+  listaFlauto?: any[];
 
 
   private BASE_URL = 'http://localhost:8080/lanaController';
@@ -79,7 +81,9 @@ export class ProdottiService {
   private getByGrammiURL = this.BASE_URL + '/getByGrammi/';
   private getByComposizioneURL = this.BASE_URL + '/getByComposizione/';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+    this.listaFlauto = lista_flauto;
+  }
 
   getLanaLista(): Observable<ILana[]> {
     return this.httpClient.get<ILana[]>(this.getListaURL)
@@ -99,5 +103,9 @@ export class ProdottiService {
       .pipe(
         catchError((error) => throwError(() => error))
       )
+  }
+
+  getListaFlauto() {
+    return this.listaFlauto;
   }
 }
