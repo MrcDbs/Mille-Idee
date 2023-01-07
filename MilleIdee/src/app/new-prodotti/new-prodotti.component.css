@@ -4,6 +4,10 @@
     object-fit: cover;
 }
 
+/* .card {
+    width: 70%;
+} */
+
 .card-title {
     font-size: 60px;
     /* font-family: "Chalkduster"; */
@@ -72,8 +76,18 @@
 .cont {
     /* background-color: #305fab; */
     /* background-color: #203c73; */
-    background-color: #6387bf;
+    /* background-color: #6387bf; */
+
+    margin-top: 20px;
+
 }
+
+.d-grid {
+    background: linear-gradient(110deg, #113d5e 60%, white 60%);
+    /* border-top: 5px solid #0a3873; */
+}
+
+
 
 /* .title {
     

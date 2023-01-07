@@ -7,7 +7,7 @@
 */
 .main-body {
     /* background-color: #288f9e; */
-    background: linear-gradient(110deg, #113d5e 60%, white 60%);
+    background: linear-gradient(110deg, #113d5e 60%, rgba(255, 255, 255, 0.793) 60%);
     transition-delay: 250ms;
     border-top: 7px solid #072439;
     opacity: 95%;
@@ -107,6 +107,7 @@
 .list-content {
     padding-top: 20px;
     border-top: 2px solid #2e4b78;
+    border-bottom: 2px solid #2e4b78;
     transition: 2s;
 }
 
@@ -116,4 +117,16 @@
 
 #in {
     width: 20%;
+}
+
+.title-cont {
+    border-bottom: 2px solid #448cc4;
+    margin-bottom: 2px;
+}
+
+#h2 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-family: "Gill Sans";
 }
