@@ -30,6 +30,8 @@ export class ListaMarcaProdottiComponent implements OnInit {
   getListaProdotti() {
     this.productValue = this.route.snapshot.paramMap.get('product');
     this.listaProdotti = this.prodottiService.lanaLista;
+    this.showFGrammi = false;
+    this.showFComp = false;
   }
 
   cercaByGrammi() {
