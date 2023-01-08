@@ -10,7 +10,11 @@ th {
 }
 
 .cont {
-    background-color: aliceblue;
+    background-color: #6387bf;
+
+    border-top: 2px solid #2e4b78;
+    border-bottom: 2px solid #2e4b78;
+    /* position: relative; */
 }
 
 #hd2 {
@@ -19,7 +23,8 @@ th {
 }
 
 .butt {
-    background-color: cornsilk;
+    background-color: rgb(98, 156, 192);
+    border: none;
 }
 
 table {
@@ -33,4 +38,39 @@ table {
 tr {
     margin-top: 10px;
     border-radius: 20px;
+}
+
+.modal-body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    border-right: 2px solid grey;
+    border-left: 2px solid grey;
+    margin-bottom: 10px;
+}
+
+
+.card-body {
+    background-color: #2f5084;
+    color: white;
+}
+
+.nb {
+
+    position: absolute;
+    top: 0px;
+
+}
+
+.ls {
+    margin-top: 90px;
+    margin-bottom: 30px;
+
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.all-c {
+    border: none;
 }

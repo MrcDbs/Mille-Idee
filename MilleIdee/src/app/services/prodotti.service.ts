@@ -15,58 +15,58 @@ export class ProdottiService {
       id: 2,
       composizione: "Pura lana",
       grammi: 3,
-      marca: "Banjo",
+      marca: "Adriafil",
       prezzo: 7.0,
-      image: "exp_banjo_lana.jpg"
+      image: "https://storage.googleapis.com/mille-idee-pics/marca_adriafil.png"
     },
     {
       id: 3,
       composizione: "80% Lana",
       grammi: 5,
-      marca: "Chanel",
+      marca: "Lana Gatto",
       prezzo: 5.5,
-      image: "exp_chanel_lana.jpg"
+      image: "https://storage.googleapis.com/mille-idee-pics/marca_lanagatto_1.jpeg"
     },
     {
       id: 1,
       composizione: "Pura lana",
       grammi: 5,
-      marca: "Adriafil",
+      marca: "Silke",
       prezzo: 6.0,
-      image: "exp_adriafil_lana.jpg"
+      image: "https://storage.googleapis.com/mille-idee-pics/marca_silke.jpeg"
     },
     {
       id: 7,
       composizione: "Pura Lana",
       grammi: 7,
-      marca: "Flauto",
+      marca: "Ispe",
       prezzo: 10.5,
-      image: "exp_flauto_lana.jpg"
+      image: "https://storage.googleapis.com/mille-idee-pics/marca_ispe.jpeg"
     },
     {
       id: 4,
       composizione: "90% Lana",
       grammi: 4,
-      marca: "Ocarina",
+      marca: "Bertagna Filati",
       prezzo: 8.0,
-      image: "exp_ocarina_lana.jpg"
-    },
-    {
-      id: 8,
-      composizione: "50% Lana, 50% Acrilico",
-      grammi: 8,
-      marca: "Gaucho",
-      prezzo: 12.0,
-      image: "exp_gaucho_lana.jpg"
-    },
-    {
-      id: 9,
-      composizione: "100% Lana",
-      grammi: 5,
-      marca: "Silke",
-      prezzo: 8.0,
-      image: "exp_silke_lana.jpg"
+      image: "https://storage.googleapis.com/mille-idee-pics/marca_bertagna.jpg"
     }
+    // ,{
+    //   id: 8,
+    //   composizione: "50% Lana, 50% Acrilico",
+    //   grammi: 8,
+    //   marca: "Gaucho",
+    //   prezzo: 12.0,
+    //   image: "exp_gaucho_lana.jpg"
+    // },
+    // {
+    //   id: 9,
+    //   composizione: "100% Lana",
+    //   grammi: 5,
+    //   marca: "Silke",
+    //   prezzo: 8.0,
+    //   image: "exp_silke_lana.jpg"
+    // }
   ];
   intimoLista?: any[];
   filatiLista?: any[];

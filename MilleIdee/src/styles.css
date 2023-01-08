@@ -7,7 +7,8 @@ body {
     /* background-color: lightgrey; */
     /* background-size: cover;
     background-repeat: no-repeat; */
-    background: linear-gradient(110deg, white 60%, #235982 60%);
+    background-color: #fffffe;
+    /* background: linear-gradient(110deg, white 60%, #235982 60%); CURRENT */
     /* background: linear-gradient(70deg, #4479a1 30%, rgba(0, 0, 0, 0) 30%), linear-gradient(30deg, #203c73 60%, white 60%); */
     /* background: linear-gradient(110deg, rgba(243, 243, 246, 0.952) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #283b7a 66%, white 66%); */
 }

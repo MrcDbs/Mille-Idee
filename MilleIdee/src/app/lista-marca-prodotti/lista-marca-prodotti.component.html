@@ -6,7 +6,7 @@
     <div class="container title-cont">
         <h1 class="mx-auto" id="h2">Lana</h1>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
                 <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per grammi</button>
@@ -23,7 +23,6 @@
             </li>
         </ul>
     </div>
-    <!-- [ngStyle]="{'display':showF?'block':'none'}" -->
     <div class="container ricerca" *ngIf="showFGrammi">
         <div class="input-group">
             <label id="la-bel">Grammi: </label>
@@ -34,18 +33,17 @@
     <div class="container ricerca" *ngIf="showFComp">
         <div class="input-group">
             <label id="la-bel">Composizione: </label>
-            <!-- <input type="text" (ngModel)="composizione" class="in"> -->
-            <select [(ngModel)]="composizione" class="in">
-                <option value="Lana">Lana</option>
-                <option value="Acrilico">Acrilico</option>
-                <option value="Cotone">Cotone</option>
-                <option value="Lana,Acrilico">Lana - Acrilico</option>
-                <option value="Lana,Cotone">Lana - Cotone</option>
-                <option value="Pura Lana">Pura Lana</option>
-            </select>
-            <button class="btn btn-outline-primary   bt" (click)="cercaByComposizione()">Cerca</button>
-        </div>
-    </div>
+    <select [(ngModel)]="composizione" class="in">
+        <option value="Lana">Lana</option>
+        <option value="Acrilico">Acrilico</option>
+        <option value="Cotone">Cotone</option>
+        <option value="Lana,Acrilico">Lana - Acrilico</option>
+        <option value="Lana,Cotone">Lana - Cotone</option>
+        <option value="Pura Lana">Pura Lana</option>
+    </select>
+    <button class="btn btn-outline-primary   bt" (click)="cercaByComposizione()">Cerca</button>
+</div>
+</div> -->
     <div class="container list-content">
         <ul class="list-group list-group-flush  ">
             <div class="row">
@@ -57,7 +55,7 @@
                                     {{productValue}}
                                 </div> -->
                             <!-- "assets/img/lana2.jpeg" -->
-                            <img class="card-img-top c-body" src="assets/img/expImg/{{p.image}}" alt="Card image cap">
+                            <img class="card-img-top c-body" src="{{p.image}}" alt="Card image cap">
                             <div class="card-body" id="txt">
                                 <h5 class="card-title">{{p.marca}}</h5>
 
