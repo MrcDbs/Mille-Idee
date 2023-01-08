@@ -7,7 +7,9 @@
 */
 .main-body {
     /* background-color: #288f9e; */
-    background: linear-gradient(110deg, #113d5e 60%, rgba(255, 255, 255, 0.793) 60%);
+    background-color: #6387bf;
+    /* background-color: #84b7de; */
+    /* background: linear-gradient(110deg, #113d5e 60%, rgba(255, 255, 255, 0.793) 60%); */
     transition-delay: 250ms;
     border-top: 7px solid #072439;
     opacity: 95%;
@@ -31,7 +33,7 @@
     /* color: #0b355e; */
     color: white;
     /* background-color: white; */
-    background-color: #6387bf;
+    background-color: #2f5084;
     font-size: 20px;
     /* border-radius: 20px; */
 
@@ -120,7 +122,7 @@
 }
 
 .title-cont {
-    border-bottom: 2px solid #448cc4;
+    border-bottom: 2px solid white;
     margin-bottom: 2px;
 }
 

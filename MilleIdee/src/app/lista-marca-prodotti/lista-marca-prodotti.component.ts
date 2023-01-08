@@ -12,7 +12,7 @@ import { ProdottiService } from '../services/prodotti.service';
 export class ListaMarcaProdottiComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private prodottiService: ProdottiService) { }
-
+  basePhotoUrl = 'https://storage.googleapis.com/mille-idee-pics/';
   productValue?: string | null;
   listaProdotti?: ILana[];
   isLoading = false;

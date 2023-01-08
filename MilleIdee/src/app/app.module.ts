@@ -22,6 +22,7 @@ import { LogInFormComponent } from './log-in-form/log-in-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListaDettaglioComponent } from './lista-dettaglio/lista-dettaglio.component';
 import { ModaFotoDettaglioComponent } from './moda-foto-dettaglio/moda-foto-dettaglio.component';
+import { FiltriRicercaComponent } from './filtri-ricerca/filtri-ricerca.component';
 // import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 
 
@@ -47,7 +48,8 @@ export function tokenGetter() {
     AreaPersonaleComponent,
     LogInFormComponent,
     ListaDettaglioComponent,
-    ModaFotoDettaglioComponent
+    ModaFotoDettaglioComponent,
+    FiltriRicercaComponent
   ],
   imports: [
     BrowserModule,
