@@ -10,8 +10,8 @@ th {
 }
 
 .cont {
-    background-color: #6387bf;
-
+    /* background-color: #6387bf; */
+    background-color: white;
     border-top: 2px solid #2e4b78;
     border-bottom: 2px solid #2e4b78;
     /* position: relative; */

@@ -6,6 +6,24 @@
     <div class="container title-cont">
         <h1 class="mx-auto" id="h2">Lana</h1>
     </div>
+    <div class="container main">
+        <div class="row gx-0">
+            <div class="col-sm-4 item">
+                <h2 (click)="showForm('g')">Ricerca per Marca</h2>
+            </div>
+            <div class="col-sm-4 item">
+                <h2 (click)="showForm('g')">Ricerca per Grammi</h2>
+            </div>
+            <!-- <div class="col-sm-4 item">
+                <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per Marca</button>
+            </div>
+            <div class="col-sm-4 item">
+                <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per Marca</button>
+            </div> -->
+
+        </div>
+
+    </div>
     <!-- <div class="container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
@@ -111,7 +129,7 @@
 
 
     <div class="btDiv py-3 mb-3 mx-auto">
-        <a [routerLink]="['/new-prodotti']" class="btn btn-outline-primary   bt">Indietro</a>
+        <a [routerLink]="['/new-prodotti']" class="btn btn-outline-primary bt">Indietro</a>
     </div>
 </div>
 

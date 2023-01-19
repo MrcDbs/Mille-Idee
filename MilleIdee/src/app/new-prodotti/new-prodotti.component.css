@@ -59,19 +59,18 @@
     text-align: center;
 }
 
-#h2 {
+/* #h2 {
     text-align: center;
     color: white;
     font-size: 75px;
     font-family: "Gill Sans";
     margin-bottom: 15px;
     box-shadow: 0 3px 3px #0a3873;
-    /* text-shadow: 2px 2px 5px #0a3873; */
+    
     background-color: #406094;
     border-radius: 10px;
-    /* width: 50%; */
-    /* font-family: "Bradley Hand"; */
-}
+    
+} */
 
 .cont {
     /* background-color: #305fab; */
@@ -84,8 +83,21 @@
 
 .d-grid {
     /* background: linear-gradient(110deg, #113d5e 60%, white 60%); */
-    background-color: #406094;
+    /* background-color: #406094; */
+    background-color: #6387bf;
     border-top: 10px solid #0a3873;
+}
+
+.title-cont {
+    border-bottom: 2px solid white;
+    margin-bottom: 2px;
+}
+
+#h2 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-family: "Gill Sans";
 }
 
 
