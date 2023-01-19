@@ -69,17 +69,39 @@
     text-align: center;
 }
 
-.bt:hover {
+.item {
+    padding-top: 5px;
+    font-family: "Gill Sans";
+    color: white;
+    text-align: center;
+    transition: transform 400ms;
+    box-shadow: -5px 0 5px -5px #0a3873, 5px 0 5px -5px #0a3873, 0 3px 5px #0a3873;
+    cursor: pointer;
+
+}
+
+.item:hover {
+    background-color: #2e4b78;
+    transform: translateY(-5px);
+    color: #f7ce2a;
+}
+
+.main {
+    opacity: 25;
+    margin-bottom: 5px;
+}
+
+/* .bt:hover {
     background-color: #2e4b78;
     color: white;
     border-color: #3376b8;
-}
+} */
 
 #myTab {
     margin-bottom: 20px;
 }
 
-.nav-link:focus {
+/* .nav-link:focus {
     background-color: #2e4b78;
     color: white;
 }
@@ -87,7 +109,7 @@
 .nav-link {
     color: white;
     font-size: 30px;
-}
+} */
 
 .ricerca {
     margin-bottom: 30px;
