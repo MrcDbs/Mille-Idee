@@ -21,6 +21,11 @@ export class ListaMarcaProdottiComponent implements OnInit {
   grammi: number = 0;
   composizione: string = '';
   listaFlauto?: any[];
+  ricerca = 'Marca';
+  defaultClass1 = 'selected1';
+  defaultClass2 = 'item2';
+  defaultClass3 = 'item3';
+
 
   ngOnInit(): void {
     this.getListaProdotti();
@@ -77,18 +82,33 @@ export class ListaMarcaProdottiComponent implements OnInit {
   //   }
   //   //console.log('product VALUE ', this.productValue);
   // }
-
-  showForm(param: any) {
-    if (param === 'g') {
-      this.showFGrammi = true;
-      this.showFComp = false;
-
-    } else if (param === 'c') {
-      this.showFGrammi = false;
-      this.showFComp = true;
+  showSearch(param: string) {
+    this.ricerca = param;
+    if (param === 'Marca') {
+      this.defaultClass1 = 'selected1';
+      this.defaultClass2 = 'item2';
+      this.defaultClass3 = 'item3';
+    } else if (param === 'Grammi') {
+      this.defaultClass1 = 'item1';
+      this.defaultClass2 = 'selected2';
+      this.defaultClass3 = 'item3';
+    } else if (param === 'Composizione') {
+      this.defaultClass1 = 'item1';
+      this.defaultClass2 = 'item2';
+      this.defaultClass3 = 'selected3';
     }
-
   }
+  // showForm(param: any) {
+  //   if (param === 'g') {
+  //     this.showFGrammi = true;
+  //     this.showFComp = false;
+
+  //   } else if (param === 'c') {
+  //     this.showFGrammi = false;
+  //     this.showFComp = true;
+  //   }
+
+  // }
 
   cercaByComposizione() {
     this.prodottiService.findByComposizione(this.composizione)
