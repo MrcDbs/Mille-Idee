@@ -17,7 +17,8 @@ export class ProdottiService {
       grammi: 3,
       marca: "Adriafil",
       prezzo: 7.0,
-      image: "https://storage.googleapis.com/mille-idee-pics/marca_adriafil.png"
+      image: "assets/img/expImg/adriafil_2.1.jpg"
+      // image: "https://storage.googleapis.com/mille-idee-pics/marca_adriafil.png"
     },
     {
       id: 3,
@@ -25,7 +26,8 @@ export class ProdottiService {
       grammi: 5,
       marca: "Lana Gatto",
       prezzo: 5.5,
-      image: "https://storage.googleapis.com/mille-idee-pics/marca_lanagatto_1.jpeg"
+      image: "assets/img/expImg/lanaGatto_2.png"
+      // image: "https://storage.googleapis.com/mille-idee-pics/marca_lanagatto_1.jpeg"
     },
     {
       id: 1,
@@ -49,16 +51,17 @@ export class ProdottiService {
       grammi: 4,
       marca: "Bertagna Filati",
       prezzo: 8.0,
-      image: "https://storage.googleapis.com/mille-idee-pics/marca_bertagna.jpg"
+      image: "assets/img/expImg/Bertagna_filati-2.jpg"
+      // image: "https://storage.googleapis.com/mille-idee-pics/marca_bertagna.jpg"
     }
-    // ,{
-    //   id: 8,
-    //   composizione: "50% Lana, 50% Acrilico",
-    //   grammi: 8,
-    //   marca: "Gaucho",
-    //   prezzo: 12.0,
-    //   image: "exp_gaucho_lana.jpg"
-    // },
+    , {
+      id: 5,
+      composizione: "50% Lana, 50% Acrilico",
+      grammi: 8,
+      marca: "Adrianwool",
+      prezzo: 12.0,
+      image: "assets/img/expImg/adrian_2.1.jpg"
+    },
     // {
     //   id: 9,
     //   composizione: "100% Lana",

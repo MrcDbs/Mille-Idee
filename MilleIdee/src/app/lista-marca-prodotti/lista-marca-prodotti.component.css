@@ -53,7 +53,7 @@
     border: none;
     opacity: 95%;
     transition: transform 550ms;
-    box-shadow: -5px 0 5px -5px #0a3873, 5px 0 5px -5px #0a3873, 0 3px 5px #0a3873;
+    box-shadow: -6px 0 6px -5px #0a3873, 6px 0 6px -5px #0a3873, 0 4px 5px #0a3873;
 }
 
 .all-c:hover {
@@ -69,7 +69,9 @@
     text-align: center;
 }
 
-.item {
+.item1,
+.item2,
+.item3 {
     padding-top: 5px;
     font-family: "Gill Sans";
     color: white;
@@ -80,10 +82,58 @@
 
 }
 
-.item:hover {
+.item1:hover {
     background-color: #2e4b78;
     transform: translateY(-5px);
     color: #f7ce2a;
+}
+
+.item2:hover {
+    background-color: #2e4b78;
+    transform: translateY(-5px);
+    color: #62cc62;
+}
+
+.item3:hover {
+    background-color: #2e4b78;
+    transform: translateY(-5px);
+    color: #d16fa7;
+}
+
+.selected1 {
+    background-color: #2e4b78;
+    transform: translateY(-5px);
+    padding-top: 5px;
+    font-family: "Gill Sans";
+    color: #f7ce2a;
+    text-align: center;
+    transition: transform 400ms;
+    box-shadow: -5px 0 5px -5px #0a3873, 5px 0 5px -5px #0a3873, 0 3px 5px #0a3873;
+    cursor: pointer;
+}
+
+.selected2 {
+    background-color: #2e4b78;
+    transform: translateY(-5px);
+    padding-top: 5px;
+    font-family: "Gill Sans";
+    color: #62cc62;
+    text-align: center;
+    transition: transform 400ms;
+    box-shadow: -5px 0 5px -5px #0a3873, 5px 0 5px -5px #0a3873, 0 3px 5px #0a3873;
+    cursor: pointer;
+}
+
+.selected3 {
+    background-color: #2e4b78;
+    transform: translateY(-5px);
+    padding-top: 5px;
+    font-family: "Gill Sans";
+    color: #d16fa7;
+    text-align: center;
+    transition: transform 400ms;
+    box-shadow: -5px 0 5px -5px #0a3873, 5px 0 5px -5px #0a3873, 0 3px 5px #0a3873;
+    cursor: pointer;
 }
 
 .main {
@@ -145,12 +195,19 @@
 
 .title-cont {
     border-bottom: 2px solid white;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 #h2 {
     text-align: center;
     color: white;
     font-size: 80px;
+    font-family: "Gill Sans";
+}
+
+#h3 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
     font-family: "Gill Sans";
 }

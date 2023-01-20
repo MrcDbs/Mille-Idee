@@ -8,11 +8,14 @@
     </div>
     <div class="container main">
         <div class="row gx-0">
-            <div class="col-sm-4 item">
-                <h2 (click)="showForm('g')">Ricerca per Marca</h2>
+            <div class="col-sm-4" [ngClass]="defaultClass1" (click)="showSearch('Marca')">
+                <h2>Ricerca per Marca</h2>
             </div>
-            <div class="col-sm-4 item">
-                <h2 (click)="showForm('g')">Ricerca per Grammi</h2>
+            <div class="col-sm-4" [ngClass]="defaultClass2" (click)="showSearch('Grammi')">
+                <h2>Ricerca per Grammi</h2>
+            </div>
+            <div class="col-sm-4" [ngClass]="defaultClass3" (click)="showSearch('Composizione')">
+                <h2>Ricerca per Composizione</h2>
             </div>
             <!-- <div class="col-sm-4 item">
                 <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per Marca</button>
@@ -63,6 +66,9 @@
 </div>
 </div> -->
     <div class="container list-content">
+        <div class="container">
+            <h1 class="mx-auto" id="h3">Ricerca per: {{ricerca}}</h1>
+        </div>
         <ul class="list-group list-group-flush  ">
             <div class="row">
                 <div class="col-sm-4" *ngFor="let p of listaProdotti">
