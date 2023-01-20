@@ -11,13 +11,18 @@ export class AppComponent {
 
   mostra: boolean = true;
 
-  onActivate(event: any) {
+  onActivate(event: any,act:boolean) {
     // window.scroll(0,0);
     console.log('activated ', event);
 
+    act?
     window.scroll({
       top: 100,
       left: 100,
+      behavior: 'smooth'
+    }):window.scroll({
+      top: 0,
+      left: 1,
       behavior: 'smooth'
     });
   }

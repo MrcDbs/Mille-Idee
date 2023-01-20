@@ -35,7 +35,8 @@ export class ProdottiService {
       grammi: 5,
       marca: "Silke",
       prezzo: 6.0,
-      image: "https://storage.googleapis.com/mille-idee-pics/marca_silke.jpeg"
+      image: 'assets/img/expImg/marca_silke.jpeg'
+      // image: "https://storage.googleapis.com/mille-idee-pics/marca_silke.jpeg"
     },
     {
       id: 7,
@@ -51,7 +52,7 @@ export class ProdottiService {
       grammi: 4,
       marca: "Bertagna Filati",
       prezzo: 8.0,
-      image: "assets/img/expImg/Bertagna_filati-2.jpg"
+      image: "assets/img/expImg/bertagna_filati_2.jpg"
       // image: "https://storage.googleapis.com/mille-idee-pics/marca_bertagna.jpg"
     }
     , {

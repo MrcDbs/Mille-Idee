@@ -7,16 +7,42 @@
         <h1 class="mx-auto" id="h2">Lana</h1>
     </div>
     <div class="container main">
-        <div class="row gx-0">
+        <div class="dropup-center dropup row gx-0">
             <div class="col-sm-4" [ngClass]="defaultClass1" (click)="showSearch('Marca')">
                 <h2>Ricerca per Marca</h2>
             </div>
             <div class="col-sm-4" [ngClass]="defaultClass2" (click)="showSearch('Grammi')">
                 <h2>Ricerca per Grammi</h2>
             </div>
-            <div class="col-sm-4" [ngClass]="defaultClass3" (click)="showSearch('Composizione')">
-                <h2>Ricerca per Composizione</h2>
+
+            <div class="col-sm-4" [ngClass]="defaultClass3" (click)="showSearch('Filtri')">
+                <h2 role="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-auto-close="outside">
+                    Ricerca per Filtri</h2>
+                <!-- <app-filtri-ricerca></app-filtri-ricerca> -->
+                <div class="dropdown-menu" id="drp" aria-labelledby="dropdownMenu2">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="exampleDropdownFormEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="dropdown-item">Cerca</div>
+                    </form>
+                </div>
             </div>
+
             <!-- <div class="col-sm-4 item">
                 <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per Marca</button>
             </div>

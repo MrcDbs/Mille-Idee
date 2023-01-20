@@ -92,7 +92,7 @@ export class ListaMarcaProdottiComponent implements OnInit {
       this.defaultClass1 = 'item1';
       this.defaultClass2 = 'selected2';
       this.defaultClass3 = 'item3';
-    } else if (param === 'Composizione') {
+    } else if (param === 'Filtri') {
       this.defaultClass1 = 'item1';
       this.defaultClass2 = 'item2';
       this.defaultClass3 = 'selected3';
