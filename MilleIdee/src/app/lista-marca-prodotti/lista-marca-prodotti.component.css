@@ -183,6 +183,8 @@
     border-top: 2px solid #2e4b78;
     border-bottom: 2px solid #2e4b78;
     transition: 2s;
+    position: relative;
+    z-index: -1;
 }
 
 .list-group {
@@ -212,6 +214,6 @@
     font-family: "Gill Sans";
 }
 
-#drp {
-    z-index: 2;
+.search {
+    margin-top: 5px;
 }
