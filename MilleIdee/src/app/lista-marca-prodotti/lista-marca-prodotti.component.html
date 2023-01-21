@@ -10,100 +10,32 @@
         <div class="dropdown-center dropdown row gx-0">
             <div class="col-sm-2" [ngClass]="defaultClass1" (click)="showSearch('Marca')">
                 <h3>Marca</h3>
-                <img src="assets/img/brand.png" class="marca" alt="marca" />
+                <img src="assets/img/brand.png" class="ic-on" alt="marca" />
             </div>
             <div class="col-sm-2" [ngClass]="defaultClass2" (click)="showSearch('Grammi')">
                 <h3>Grammi</h3>
-                <img src="assets/img/weight.png" class="grammi" alt="grammi" />
+                <img src="assets/img/weight.png" class="ic-on" alt="grammi" />
             </div>
 
-            <div class="col-sm-2" (click)="showSearch('Filtri')">
+            <div class="col-sm-2" id="dv" (click)="showSearch('Filtri')">
                 <span [ngClass]="defaultClass3" role="button" id="dropdownMenu2" data-bs-toggle="dropdown"
                     aria-expanded="false" data-bs-auto-close="outside">
                     <h3>Filtri</h3>
-                    <img src="assets/img/filters.png" class="filters" alt="filtri" />
+                    <img src="assets/img/filters.png" class="ic-on" alt="filtri" />
                 </span>
-
-
-
-
-                <!-- <app-filtri-ricerca></app-filtri-ricerca> -->
-                <div class="dropdown-menu" id="drp" aria-labelledby="dropdownMenu2">
-                    <form class="px-4 py-3">
-                        <div class="form-group">
-                            <label for="colore">Colore</label>
-                            <input type="text" class="form-control" id="exampleDropdownFormEmail1">
-                        </div>
-                        <div class="form-group">
-                            <label for="prezzo">Prezzo</label>
-                            <input type="number" class="form-control" id="exampleDropdownFormPassword1" placeholder="0">
-                        </div>
-                        <div class="form-group">
-                            <label for="prezzo">Composizione</label>
-                            <select class="form-control">
-                                <option value="Lana">Lana</option>
-                                <option value="Acrilico">Acrilico</option>
-                                <option value="Cotone">Cotone</option>
-                                <option value="Lana,Acrilico">Lana - Acrilico</option>
-                                <option value="Lana,Cotone">Lana - Cotone</option>
-                                <option value="Pura Lana">Pura Lana</option>
-                            </select>
-                        </div>
-
-                        <div class="dropdown-item search">Cerca</div>
-                    </form>
-                </div>
+                <div class="dropdown-menu" id="drp" aria-labelledby="dropdownMenu2" app-filtri-ricerca></div>
             </div>
-
-            <!-- <div class="col-sm-4 item">
-                <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per Marca</button>
-            </div>
-            <div class="col-sm-4 item">
-                <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per Marca</button>
-            </div> -->
-
         </div>
-
-    </div>
-    <!-- <div class="container">
+        <!-- <div class="container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
                 <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per grammi</button>
             </li>
-            <li class="nav-item">
-                <button class="nav-link" id="profile-tab" (click)="showForm('c')">Ricerca per composizione</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" id="tutti-tab" (click)="getListaProdotti()">Tutti</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" id="contact-tab" data-toggle="tab" role="tab" aria-controls="contact"
-                    aria-selected="false">Filtri</button>
-            </li>
         </ul>
+        </div> -->
     </div>
-    <div class="container ricerca" *ngIf="showFGrammi">
-        <div class="input-group">
-            <label id="la-bel">Grammi: </label>
-            <input type="number" [(ngModel)]="grammi" class="in" max="200" min="5">
-            <button class="btn btn-outline-primary   bt" (click)="cercaByGrammi()">Cerca</button>
-        </div>
-    </div>
-    <div class="container ricerca" *ngIf="showFComp">
-        <div class="input-group">
-            <label id="la-bel">Composizione: </label>
-    <select [(ngModel)]="composizione" class="in">
-        <option value="Lana">Lana</option>
-        <option value="Acrilico">Acrilico</option>
-        <option value="Cotone">Cotone</option>
-        <option value="Lana,Acrilico">Lana - Acrilico</option>
-        <option value="Lana,Cotone">Lana - Cotone</option>
-        <option value="Pura Lana">Pura Lana</option>
-    </select>
-    <button class="btn btn-outline-primary   bt" (click)="cercaByComposizione()">Cerca</button>
-</div>
-</div> -->
-    <div class="container list-content">
+
+    <div class="container list-content px-3">
         <div class="container">
             <h1 class="mx-auto" id="h3">{{ricerca}}</h1>
         </div>
@@ -112,83 +44,21 @@
                 <div class="col-sm-4" *ngFor="let p of listaProdotti">
                     <li class="list li" data-bs-toggle="modal" data-bs-target="#bd-example-modal-lg">
                         <div class="card text-center all-c">
-                            <!-- <div class="modal-body"> -->
-                            <!-- <div class="card-header all-c" id="txt">
-                                    {{productValue}}
-                                </div> -->
-                            <!-- "assets/img/lana2.jpeg" -->
                             <img class="card-img-top c-body" src="{{p.image}}" alt="Card image cap">
                             <div class="card-body" id="txt">
                                 <h5 class="card-title">{{p.marca}}</h5>
-
                                 <p class="par">Click for
                                     details</p>
-                                <!-- <button type="button" class="btn btn-outline-primary   bt" data-bs-toggle="modal"
-                                    data-bs-target="#bd-example-modal-lg">Click for details</button> -->
-                                <!-- <a href="#" class="btn btn-outline-primary bt">Dettagli</a> -->
                             </div>
-                            <!-- </div> -->
-                        </div>`
-                        <!-- <div class="card text-left gy-2 card-slot">
-                                <div class="card-header txt">
-                                    {{productValue}}
-                                </div>
-                                <div class="card-body bd">
-                                    <h5 class="card-title">{{p.marca}}</h5>
-                                    <p class="card-text">{{p.composizione}}</p>
-                                    <a href="#" class="btn btn-outline-primary bt">Dettagli</a>
-                                    <img class="card-img-top" src="../assets/img/lana2.jpeg" alt="Card image" width="140px"
-                                        height="130px" style="margin-left:5px;">
-                                </div>
-        
-                            </div> -->
-
+                        </div>
                     </li>
                 </div>
-
-
-                <!-- <li class="list-group-item li">
-                <div class="card text-center">
-                    <div class="card-header">
-                        {{productValue}}
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Marca 2</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-outline-primary bt">Go somewhere</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        2 days ago
-                    </div>
-                </div>
-            </li> -->
-                <!-- <li class="list-group-item">Marca 3</li>
-            <li class="list-group-item">Marca 4</li>
-            <li class="list-group-item">Marca 5</li> -->
             </div>
         </ul>
-
-
     </div>
-
 
     <div class="btDiv py-3 mb-3 mx-auto">
         <a [routerLink]="['/new-prodotti']" class="btn btn-outline-primary bt">Indietro</a>
     </div>
 </div>
-
 <app-lista-dettaglio [listaProdotti]="listaFlauto"></app-lista-dettaglio>
-<!-- <ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Cras justo odio
-        <span class="badge badge-pill badge-primary ">14</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Dapibus ac facilisis in
-        <span class="badge badge-primary badge-pill">2</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Morbi leo risus
-        <span class="badge badge-primary badge-pill">1</span>
-    </li>
-</ul> -->
