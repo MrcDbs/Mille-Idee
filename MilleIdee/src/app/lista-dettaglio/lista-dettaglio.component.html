@@ -1,31 +1,34 @@
-<div class="modal fade" id="bd-example-modal-lg" tabindex=" -1" role="dialog" aria-labelledby="myLargeModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+<div class="modal fade" id="bd-example-modal-lg" aria-hidden="true">
 
+    <div class="modal-dialog modal-dialog-scrollable">
         <div class="container modal-content cont">
-            <nav class="fixed-top navbar navbar-light nb" style="background-color:#406094;">
-                <div class="modal-header">
-                    <!-- <h4 id="hd2">{{marca}}</h4> -->
-                    <button type="button" class="btn-close butt" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-            </nav>
+            <div class="modal-header">
+                <h2 class="modal-title" id="hd2">{{marca}}</h2>
+                <!-- <button type="button" class="close" data-dismiss="modal">X</button> -->
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- <h4 id="hd2">{{marca}}</h4> -->
+            </div>
 
-            <ul class="list-group list-group-flush ls">
+            <!-- <nav class="fixed-top navbar navbar-light nb" style="background-color:#406094;">
+               
+            </nav> -->
+            <div class="modal-body">
+                <ul class="list-group list-group-flush ls">
 
-                <li *ngFor="let p of listaProdotti">
-                    <div class="card text-center all-c">
-                        <img class="card-img-top c-body" src="{{p.foto}}" alt="Card image cap">
-                        <div class="card-body" id="txt">
-                            <h5 class="card-title">{{p.id}} - {{p.tipo}}</h5>
-                            <p class="card-text"><b>Grammi:</b> {{p.grammi}},<b> Colore:</b>
-                                {{p.colore}}</p>
-                            <p class="card-text"><b>Composizione:</b> {{p.composizione}}</p>
-                            <p class="card-text"><b>Prezzo:</b> &euro; {{p.prezzo}}</p>
+                    <li *ngFor="let p of listaProdotti">
+                        <div class="card text-center all-c">
+                            <img class="card-img-top c-body" src="{{p.foto}}" alt="Card image cap">
+                            <div class="card-body" id="txt">
+                                <h5 class="card-title">{{p.id}} - {{p.tipo}}</h5>
+                                <p class="card-text"><b>Grammi:</b> {{p.grammi}},<b> Colore:</b>
+                                    {{p.colore}}</p>
+                                <p class="card-text"><b>Composizione:</b> {{p.composizione}}</p>
+                                <p class="card-text"><b>Prezzo:</b> &euro; {{p.prezzo}}</p>
+                            </div>
+
                         </div>
 
-                    </div>`
-
-                    <!-- <div class="card">
+                        <!-- <div class="card">
                         <div class="modal-body">
                             <img class="card-img-top" src="{{p.foto}}" alt="Card image cap">
                             <div class="card-body">
@@ -37,8 +40,8 @@
                             </div>
                         </div>
                     </div> -->
-                </li>
-                <!-- <td>
+                    </li>
+                    <!-- <td>
                             <div class="modal fade" id="e" tabindex="-1"
                                 aria-labelledby="exampleModal1Label" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -56,7 +59,9 @@
                                 </div>
                             </div>
                         </td> -->
-            </ul>
+                </ul>
+            </div>
         </div>
+
     </div>
 </div>

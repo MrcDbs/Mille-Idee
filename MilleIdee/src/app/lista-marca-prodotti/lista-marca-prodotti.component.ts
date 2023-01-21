@@ -21,10 +21,10 @@ export class ListaMarcaProdottiComponent implements OnInit {
   grammi: number = 0;
   composizione: string = '';
   listaFlauto?: any[];
-  ricerca = 'Marca';
+  ricerca = 'Ricerca per: Marca';
   defaultClass1 = 'selected1';
-  defaultClass2 = 'item2';
-  defaultClass3 = 'item3';
+  defaultClass2 = 'item1';
+  defaultClass3 = 'item1';
 
 
   ngOnInit(): void {
@@ -83,19 +83,22 @@ export class ListaMarcaProdottiComponent implements OnInit {
   //   //console.log('product VALUE ', this.productValue);
   // }
   showSearch(param: string) {
-    this.ricerca = param;
+
     if (param === 'Marca') {
+      this.ricerca = 'Ricerca per: ' + param;
       this.defaultClass1 = 'selected1';
-      this.defaultClass2 = 'item2';
-      this.defaultClass3 = 'item3';
+      this.defaultClass2 = 'item1';
+      this.defaultClass3 = 'item1';
     } else if (param === 'Grammi') {
+      this.ricerca = 'Ricerca per: ' + param;
       this.defaultClass1 = 'item1';
-      this.defaultClass2 = 'selected2';
-      this.defaultClass3 = 'item3';
-    } else if (param === 'Composizione') {
+      this.defaultClass2 = 'selected1';
+      this.defaultClass3 = 'item1';
+    } else if (param === 'Filtri') {
+      this.ricerca = param;
       this.defaultClass1 = 'item1';
-      this.defaultClass2 = 'item2';
-      this.defaultClass3 = 'selected3';
+      this.defaultClass2 = 'item1';
+      this.defaultClass3 = 'selected1';
     }
   }
   // showForm(param: any) {

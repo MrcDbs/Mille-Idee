@@ -7,16 +7,53 @@
         <h1 class="mx-auto" id="h2">Lana</h1>
     </div>
     <div class="container main">
-        <div class="row gx-0">
-            <div class="col-sm-4" [ngClass]="defaultClass1" (click)="showSearch('Marca')">
-                <h2>Ricerca per Marca</h2>
+        <div class="dropdown-center dropdown row gx-0">
+            <div class="col-sm-2" [ngClass]="defaultClass1" (click)="showSearch('Marca')">
+                <h3>Marca</h3>
+                <img src="assets/img/brand.png" class="marca" alt="marca" />
             </div>
-            <div class="col-sm-4" [ngClass]="defaultClass2" (click)="showSearch('Grammi')">
-                <h2>Ricerca per Grammi</h2>
+            <div class="col-sm-2" [ngClass]="defaultClass2" (click)="showSearch('Grammi')">
+                <h3>Grammi</h3>
+                <img src="assets/img/weight.png" class="grammi" alt="grammi" />
             </div>
-            <div class="col-sm-4" [ngClass]="defaultClass3" (click)="showSearch('Composizione')">
-                <h2>Ricerca per Composizione</h2>
+
+            <div class="col-sm-2" (click)="showSearch('Filtri')">
+                <span [ngClass]="defaultClass3" role="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-auto-close="outside">
+                    <h3>Filtri</h3>
+                    <img src="assets/img/filters.png" class="filters" alt="filtri" />
+                </span>
+
+
+
+                <!-- <app-filtri-ricerca></app-filtri-ricerca> -->
+                <div class="dropdown-menu" id="drp" aria-labelledby="dropdownMenu2">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="colore">Colore</label>
+                            <input type="text" class="form-control" id="exampleDropdownFormEmail1">
+                        </div>
+                        <div class="form-group">
+                            <label for="prezzo">Prezzo</label>
+                            <input type="number" class="form-control" id="exampleDropdownFormPassword1" placeholder="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="prezzo">Composizione</label>
+                            <select class="form-control">
+                                <option value="Lana">Lana</option>
+                                <option value="Acrilico">Acrilico</option>
+                                <option value="Cotone">Cotone</option>
+                                <option value="Lana,Acrilico">Lana - Acrilico</option>
+                                <option value="Lana,Cotone">Lana - Cotone</option>
+                                <option value="Pura Lana">Pura Lana</option>
+                            </select>
+                        </div>
+
+                        <div class="dropdown-item search">Cerca</div>
+                    </form>
+                </div>
             </div>
+
             <!-- <div class="col-sm-4 item">
                 <button class="nav-link" id="lista-tab" (click)="showForm('g')">Ricerca per Marca</button>
             </div>
@@ -67,7 +104,7 @@
 </div> -->
     <div class="container list-content">
         <div class="container">
-            <h1 class="mx-auto" id="h3">Ricerca per: {{ricerca}}</h1>
+            <h1 class="mx-auto" id="h3">{{ricerca}}</h1>
         </div>
         <ul class="list-group list-group-flush  ">
             <div class="row">
