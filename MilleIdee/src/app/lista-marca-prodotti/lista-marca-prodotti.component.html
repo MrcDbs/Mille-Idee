@@ -7,18 +7,25 @@
         <h1 class="mx-auto" id="h2">Lana</h1>
     </div>
     <div class="container main">
-        <div class="dropup-center dropup row gx-0">
-            <div class="col-sm-4" [ngClass]="defaultClass1" (click)="showSearch('Marca')">
-                <h2>Ricerca per Marca</h2>
+        <div class="dropdown-center dropdown row gx-0">
+            <div class="col-sm-2" [ngClass]="defaultClass1" (click)="showSearch('Marca')">
+                <h3>Marca</h3>
+                <img src="assets/img/brand.png" class="marca" alt="marca" />
             </div>
-            <div class="col-sm-4" [ngClass]="defaultClass2" (click)="showSearch('Grammi')">
-                <h2>Ricerca per Grammi</h2>
+            <div class="col-sm-2" [ngClass]="defaultClass2" (click)="showSearch('Grammi')">
+                <h3>Grammi</h3>
+                <img src="assets/img/weight.png" class="grammi" alt="grammi" />
             </div>
 
-            <div class="col-sm-4" [ngClass]="defaultClass3" (click)="showSearch('Filtri')">
-                <h2 role="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"
-                    data-bs-auto-close="outside">
-                    Ricerca per Filtri</h2>
+            <div class="col-sm-2" (click)="showSearch('Filtri')">
+                <span [ngClass]="defaultClass3" role="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-auto-close="outside">
+                    <h3>Filtri</h3>
+                    <img src="assets/img/filters.png" class="filters" alt="filtri" />
+                </span>
+
+
+
                 <!-- <app-filtri-ricerca></app-filtri-ricerca> -->
                 <div class="dropdown-menu" id="drp" aria-labelledby="dropdownMenu2">
                     <form class="px-4 py-3">
@@ -97,7 +104,7 @@
 </div> -->
     <div class="container list-content">
         <div class="container">
-            <h1 class="mx-auto" id="h3">Ricerca per: {{ricerca}}</h1>
+            <h1 class="mx-auto" id="h3">{{ricerca}}</h1>
         </div>
         <ul class="list-group list-group-flush  ">
             <div class="row">
