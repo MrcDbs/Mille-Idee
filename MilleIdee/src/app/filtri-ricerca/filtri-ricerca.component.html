@@ -1,3 +1,33 @@
+<!-- <div class="dropdown-menu" id="drp" aria-labelledby="dropdownMenu2"> -->
+<form class="px-4 py-3">
+    <div class="tl-cont">
+        <h2 class="form-title">Filtri</h2>
+    </div>
+
+    <div class="form-group">
+        <label for="colore">Colore</label>
+        <input type="text" class="form-control" id="exampleDropdownFormEmail1">
+    </div>
+    <div class="form-group">
+        <label for="prezzo">Prezzo</label>
+        <input type="number" class="form-control" id="exampleDropdownFormPassword1" placeholder="0">
+    </div>
+    <div class="form-group">
+        <label for="prezzo">Composizione</label>
+        <select class="form-control">
+            <option value="Lana">Lana</option>
+            <option value="Acrilico">Acrilico</option>
+            <option value="Cotone">Cotone</option>
+            <option value="Lana,Acrilico">Lana - Acrilico</option>
+            <option value="Lana,Cotone">Lana - Cotone</option>
+            <option value="Pura Lana">Pura Lana</option>
+        </select>
+    </div>
+
+    <div class="dropdown-item search">Cerca</div>
+</form>
+<!-- </div> -->
+
 <!-- <div class="container">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
@@ -21,44 +51,4 @@
         <input type="number" [(ngModel)]="grammi" class="in" max="200" min="5">
         <button class="btn btn-outline-primary   bt" (click)="cercaByGrammi()">Cerca</button>
     </div>
-</div>
-<div class="container ricerca" *ngIf="showFComp">
-    <div class="input-group">
-        <label id="la-bel">Composizione: </label>
-        
-        <select [(ngModel)]="composizione" class="in">
-            <option value="Lana">Lana</option>
-            <option value="Acrilico">Acrilico</option>
-            <option value="Cotone">Cotone</option>
-            <option value="Lana,Acrilico">Lana - Acrilico</option>
-            <option value="Lana,Cotone">Lana - Cotone</option>
-            <option value="Pura Lana">Pura Lana</option>
-        </select>
-        <button class="btn btn-outline-primary   bt" (click)="cercaByComposizione()">Cerca</button>
-    </div>
-</div> -->
-<div class="dropdown-menu" id="drp" aria-labelledby="dropdownMenu2">
-    <form class="px-4 py-3">
-        <div class="form-group">
-            <label for="colore">Colore</label>
-            <input type="text" class="form-control" id="exampleDropdownFormEmail1">
-        </div>
-        <div class="form-group">
-            <label for="prezzo">Prezzo</label>
-            <input type="number" class="form-control" id="exampleDropdownFormPassword1" placeholder="0">
-        </div>
-        <div class="form-group">
-            <label for="prezzo">Composizione</label>
-            <select class="form-control">
-                <option value="Lana">Lana</option>
-                <option value="Acrilico">Acrilico</option>
-                <option value="Cotone">Cotone</option>
-                <option value="Lana,Acrilico">Lana - Acrilico</option>
-                <option value="Lana,Cotone">Lana - Cotone</option>
-                <option value="Pura Lana">Pura Lana</option>
-            </select>
-        </div>
-
-        <div class="dropdown-item search">Cerca</div>
-    </form>
-</div>
+</div>-->
