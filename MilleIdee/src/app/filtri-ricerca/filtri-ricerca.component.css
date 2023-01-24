@@ -1,4 +1,4 @@
-.search {
+#search {
     margin-top: 5px;
     text-align: center;
     cursor: pointer;
@@ -6,12 +6,12 @@
     border-radius: 5px;
 }
 
-.search:hover {
+#search:hover {
     background-color: rgb(35, 52, 113);
     color: white;
 }
 
-.search:active {
+#search:active {
     background-color: rgb(86, 125, 202);
     color: white;
 }

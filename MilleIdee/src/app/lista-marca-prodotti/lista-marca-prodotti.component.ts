@@ -15,9 +15,13 @@ export class ListaMarcaProdottiComponent implements OnInit {
   basePhotoUrl = 'https://storage.googleapis.com/mille-idee-pics/';
   productValue?: string | null;
   listaProdotti?: ILana[];
+  listaGrammi?: {
+    id: number,
+    quantitaGrammi: number
+  }[];
   isLoading = false;
-  showFGrammi = false;
-  showFComp = false;
+  showGrammi = false;
+  showMarca = true;
   grammi: number = 0;
   composizione: string = '';
   listaFlauto?: any[];
@@ -28,15 +32,24 @@ export class ListaMarcaProdottiComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.getListaProdotti();
+    // this.getListaProdotti('Marca');
+    this.getListaProdotti('Marca');
     this.listaFlauto = this.prodottiService.listaFlauto;
 
   }
-  getListaProdotti() {
+  getListaProdotti(param: string) {
     this.productValue = this.route.snapshot.paramMap.get('product');
-    this.listaProdotti = this.prodottiService.lanaLista;
-    this.showFGrammi = false;
-    this.showFComp = false;
+    if (param === 'Marca') {
+      this.listaProdotti = this.prodottiService.lanaLista;
+      this.showMarca = true;
+      this.showGrammi = !this.showMarca;
+    } else {
+      this.listaGrammi = this.prodottiService.listaGrammi;
+      this.showMarca = false;
+      this.showGrammi = !this.showMarca;
+    }
+
+
   }
 
   cercaByGrammi() {
@@ -57,28 +70,51 @@ export class ListaMarcaProdottiComponent implements OnInit {
 
   }
 
-  openListaClicked() {
-
+  addPicURL(lista: ILana[]) {
+    lista.forEach(p => {
+      p.image = this.basePhotoUrl + p.image
+    })
   }
-  // getListaProdotti() {
+  // getListaProdotti(param: string) {
   //   this.isLoading = true;
   //   this.productValue = this.route.snapshot.paramMap.get('product');
+
   //   if (this.productValue === 'Lana') {
-  //     console.log('1');
-  //     this.prodottiService.getLanaLista()
-  //       .subscribe({
-  //         next: (response) => {
-  //           this.listaProdotti = response;
-  //           console.log('LISTA ', this.listaProdotti);
-  //           this.isLoading = false;
-  //           this.showFGrammi = false;
-  //           this.showFComp = false;
-  //         },
-  //         error: (error) => {
-  //           this.isLoading = false;
-  //           console.error('ERROR !!! - ' + error.status);
-  //         }
-  //       });
+  //     if (param === 'Marca') {
+  //       console.log('1');
+  //       this.prodottiService.getLanaLista()
+  //         .subscribe({
+  //           next: (response) => {
+  //             this.listaProdotti = response;
+  //             this.addPicURL(this.listaProdotti);
+  //             console.log('LISTA ', this.listaProdotti);
+  //             this.isLoading = false;
+
+  //             this.showMarca = param === 'Marca' ? true : false;
+  //             this.showGrammi = !this.showMarca;
+  //           },
+  //           error: (error) => {
+  //             this.isLoading = false;
+  //             console.error('ERROR !!! - ' + error.status);
+  //           }
+  //         });
+  //     } else {
+  //       this.prodottiService.getListaGrammi()
+  //         .subscribe({
+  //           next: (response) => {
+  //             this.listaGrammi = response;
+  //             console.log('LISTA ', this.listaProdotti);
+  //             this.isLoading = false;
+
+  //             this.showMarca = param === 'Marca' ? true : false;
+  //             this.showGrammi = !this.showMarca;
+  //           },
+  //           error: (error) => {
+  //             this.isLoading = false;
+  //             console.error('ERROR !!! - ' + error.status);
+  //           }
+  //         });
+  //     }
   //   }
   //   //console.log('product VALUE ', this.productValue);
   // }
@@ -89,11 +125,15 @@ export class ListaMarcaProdottiComponent implements OnInit {
       this.defaultClass1 = 'selected1';
       this.defaultClass2 = 'item1';
       this.defaultClass3 = 'item1';
+
+      this.getListaProdotti(param);
     } else if (param === 'Grammi') {
       this.ricerca = 'Ricerca per: ' + param;
       this.defaultClass1 = 'item1';
       this.defaultClass2 = 'selected1';
       this.defaultClass3 = 'item1';
+
+      this.getListaProdotti(param);
     } else if (param === 'Filtri') {
       this.ricerca = param;
       this.defaultClass1 = 'item1';
