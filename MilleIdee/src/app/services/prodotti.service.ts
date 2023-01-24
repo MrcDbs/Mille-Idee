@@ -72,6 +72,29 @@ export class ProdottiService {
     //   image: "exp_silke_lana.jpg"
     // }
   ];
+
+  listaGrammi = [
+    {
+      id: 1,
+      quantitaGrammi: 50
+    },
+    {
+      id: 2,
+      quantitaGrammi: 100
+    },
+    {
+      id: 3,
+      quantitaGrammi: 150
+    },
+    {
+      id: 4,
+      quantitaGrammi: 200
+    },
+    {
+      id: 5,
+      quantitaGrammi: 250
+    },
+  ]
   intimoLista?: any[];
   filatiLista?: any[];
   merceria?: [];
@@ -79,11 +102,14 @@ export class ProdottiService {
   listaFlauto?: any[];
 
 
-  private BASE_URL = 'http://localhost:8080/lanaController';
 
-  private getListaURL = this.BASE_URL + '/getAllLana';
-  private getByGrammiURL = this.BASE_URL + '/getByGrammi/';
-  private getByComposizioneURL = this.BASE_URL + '/getByComposizione/';
+  private BASE_URL = 'http://localhost:8080';
+
+  private getListaURL = this.BASE_URL + '/lanaController/getAllLana';
+  private getByGrammiURL = this.BASE_URL + '/lanaController/getByGrammi/';
+  private getByComposizioneURL = this.BASE_URL + '/lanaController/getByComposizione/';
+
+  private getGrammiURL = this.BASE_URL + '/grammiController/getAllGrammi';
 
   constructor(private httpClient: HttpClient) {
     this.listaFlauto = lista_flauto;
@@ -111,5 +137,12 @@ export class ProdottiService {
 
   getListaFlauto() {
     return this.listaFlauto;
+  }
+
+  getListaGrammi(): Observable<any> {
+    return this.httpClient.get<any>(this.getGrammiURL)
+      .pipe(
+        catchError((error) => throwError(() => error))
+      )
   }
 }

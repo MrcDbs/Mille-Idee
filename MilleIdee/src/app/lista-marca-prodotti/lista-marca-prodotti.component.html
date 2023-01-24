@@ -40,13 +40,27 @@
             <h1 class="mx-auto" id="h3">{{ricerca}}</h1>
         </div>
         <ul class="list-group list-group-flush  ">
-            <div class="row">
+            <div *ngIf="showMarca" class="row">
                 <div class="col-sm-4" *ngFor="let p of listaProdotti">
                     <li class="list li" data-bs-toggle="modal" data-bs-target="#bd-example-modal-lg">
                         <div class="card text-center all-c">
                             <img class="card-img-top c-body" src="{{p.image}}" alt="Card image cap">
                             <div class="card-body" id="txt">
                                 <h5 class="card-title">{{p.marca}}</h5>
+                                <p class="par">Click for
+                                    details</p>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+            <div *ngIf="showGrammi" class="row">
+                <div class="col-sm-4" *ngFor="let g of listaGrammi">
+                    <li class="list li" data-bs-toggle="modal" data-bs-target="#bd-example-modal-lg">
+                        <div class="card text-center all-c">
+                            <!-- <img class="card-img-top c-body" src="{{p.image}}" alt="Card image cap"> -->
+                            <div class="card-body" id="txt">
+                                <h5 class="card-title">{{g.quantitaGrammi}} Grammi</h5>
                                 <p class="par">Click for
                                     details</p>
                             </div>
