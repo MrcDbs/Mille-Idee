@@ -2,7 +2,7 @@
     color: #305fab;
     font-size: 25px;
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
-    font-family: "Gill Sans";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #leftLink {
@@ -10,14 +10,14 @@
     color: #e9f1f2;
     font-size: 20px;
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
-    font-family: "Gill Sans";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #offcanvasRightLabel,
 #offcanvasStartLabel {
     color: #305fab;
     /* font-family: "Chalkduster"; */
-    font-family: "Gill Sans";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 35px;
 
 }
@@ -29,7 +29,7 @@
 #offcanvasTopLabel {
     color: white;
     /* font-family: "Chalkduster"; */
-    font-family: "Gill Sans";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 45px;
 }
 
@@ -44,7 +44,7 @@
 #customS {
     color: white;
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
-    font-family: "Gill Sans";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
@@ -59,7 +59,7 @@
 .customO {
     /* width: 40%; */
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
-    font-family: "Gill Sans";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #leftLink:hover {
