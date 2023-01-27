@@ -75,9 +75,14 @@
 
 }
 
-.navbar-toggler-icon {
-    color: white;
+.navbar-toggler {
+
+    background-color: #406094;
 }
+
+/* .navbar-toggler-icon {
+    color: white;
+} */
 
 .lnk,
 #prod1,
