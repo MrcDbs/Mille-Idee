@@ -1,10 +1,16 @@
 <app-navbar></app-navbar>
-<div class="head-container mx-5" *ngIf="mostra">
-    <h1 class="header mt-* mt-sm-* mt-md-*" id="h1">Mille Idee</h1>
+<!-- <div class="head-container"></div> -->
+<div class="head-container" *ngIf="mostra">
+    <!-- <h1 class="header">Mille Idee</h1> -->
+    <p><span class="header">Mille Idee</span>di Anna Maria Bonacci<br />Attività di sartoria e di vendita al
+        dettaglio<br />dal 1964
+    </p>
+    <!-- <h1 class="header mt-* mt-sm-* mt-md-*" id="h1">Mille Idee</h1> -->
+    <!-- <h1 class="header mt-* mt-sm-* mt-md-*" id="h1">Mille Idee</h1>-->
     <!-- <hr id="hr1"> -->
-    <img src="favicon.ico" alt="Needle" width="52" height="52">
+    <!-- <img src="favicon.ico" alt="Needle" width="52" height="52">-->
     <!-- <img src="assets/img/needle-64.ico" alt="Bootstrap" width="52" height="52"> -->
-    <h3 class="header" id="h2">- di Anna Maria Bonacci -</h3>
+    <!--<h3 class="header" id="h2">- di Anna Maria Bonacci -</h3> -->
 </div>
 <!-- <div class="line"></div> -->
 <router-outlet (activate)="onActivate($event,true)" (deactivate)="onActivate($event,false)"></router-outlet>

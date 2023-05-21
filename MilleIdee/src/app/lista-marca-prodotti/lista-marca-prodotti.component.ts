@@ -40,7 +40,7 @@ export class ListaMarcaProdottiComponent implements OnInit {
   getListaProdotti(param: string) {
     this.productValue = this.route.snapshot.paramMap.get('product');
     if (param === 'Marca') {
-      this.listaProdotti = this.prodottiService.lanaLista;
+      this.listaProdotti = this.prodottiService.marcaLanaLista;
       this.showMarca = true;
       this.showGrammi = !this.showMarca;
     } else {

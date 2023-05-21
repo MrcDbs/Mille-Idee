@@ -1,0 +1,144 @@
+{
+    "marcaListaLana": [
+        {
+            "id": 2,
+            "composizione": "Pura lana",
+            "grammi": 3,
+            "marca": "Adriafil",
+            "prezzo": 7.0,
+            "image": "assets/img/expImg/adriafil_2.1.jpg"
+        },
+        {
+            "id": 3,
+            "composizione": "80% Lana",
+            "grammi": 5,
+            "marca": "Lana Gatto",
+            "prezzo": 5.5,
+            "image": "assets/img/expImg/lanaGatto_2.png"
+        },
+        {
+            "id": 1,
+            "composizione": "Pura lana",
+            "grammi": 5,
+            "marca": "Silke",
+            "prezzo": 6.0,
+            "image": "assets/img/expImg/marca_silke.jpeg"
+        },
+        {
+            "id": 7,
+            "composizione": "Pura Lana",
+            "grammi": 7,
+            "marca": "Ispe",
+            "prezzo": 10.5,
+            "image": "assets/img/expImg/marca_ispe.jpeg"
+        },
+        {
+            "id": 4,
+            "composizione": "90% Lana",
+            "grammi": 4,
+            "marca": "Bertagna Filati",
+            "prezzo": 8.0,
+            "image": "assets/img/expImg/bertagna_filati_2.jpg"
+        },
+        {
+            "id": 5,
+            "composizione": "50% Lana, 50% Acrilico",
+            "grammi": 8,
+            "marca": "Adrianwool",
+            "prezzo": 12.0,
+            "image": "assets/img/expImg/adrian_2.1.jpg"
+        }
+    ],
+    "listaFlauto": [
+        {
+            "id": 1,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 50% Acrilico",
+            "grammi": 100,
+            "colore": "77 - Giallo/Rosso",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_1.jpg"
+        },
+        {
+            "id": 2,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 20% Acrilico, 30% Cotone",
+            "grammi": 100,
+            "colore": "70 - Grigio/Blu",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_2.jpg"
+        },
+        {
+            "id": 3,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 50% Cotone",
+            "grammi": 100,
+            "colore": "60 - Bianco/Blu",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_3.jpg"
+        },
+        {
+            "id": 4,
+            "tipo": "Flauto",
+            "composizione": "30% Lana, 40% Acrilico, 30% Cotone",
+            "grammi": 100,
+            "colore": "56 - Grigio/Verde",
+            "prezzo": 7.00,
+            "foto": "assets/img/flauto/flauto_4.jpg"
+        },
+        {
+            "id": 1,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 50% Acrilico",
+            "grammi": 100,
+            "colore": "77 - Giallo/Rosso",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_5.jpg"
+        },
+        {
+            "id": 2,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 20% Acrilico, 30% Cotone",
+            "grammi": 100,
+            "colore": "70 - Grigio/Blu",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_6.jpg"
+        },
+        {
+            "id": 3,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 50% Cotone",
+            "grammi": 100,
+            "colore": "60 - Bianco/Blu",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_3.jpg"
+        },
+        {
+            "id": 1,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 50% Acrilico",
+            "grammi": 100,
+            "colore": "77 - Giallo/Rosso",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_1.jpg"
+        },
+        {
+            "id": 2,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 20% Acrilico, 30% Cotone",
+            "grammi": 100,
+            "colore": "70 - Grigio/Blu",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_2.jpg"
+        },
+        {
+            "id": 3,
+            "tipo": "Flauto",
+            "composizione": "50% Lana, 50% Cotone",
+            "grammi": 100,
+            "colore": "60 - Bianco/Blu",
+            "prezzo": 8.00,
+            "foto": "assets/img/flauto/flauto_3.jpg"
+        }
+    ]
+}

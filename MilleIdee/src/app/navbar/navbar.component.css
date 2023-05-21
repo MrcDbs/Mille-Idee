@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Rouge+Script&display=swap');
+
 #txt {
     color: #305fab;
     font-size: 25px;
@@ -88,11 +90,34 @@
 #prod1,
 #prod2,
 #prod3,
-#prod4,
 #prod5 {
     color: white;
+}
+
+#prod4,
+#prod6 {
+    color: lightgray;
 }
 
 .nb {
     background: linear-gradient(110deg, #406094 60%, #113d5e 60%);
 }
+
+h2 {
+    /* color: #CEF0D4; */
+    color: #fcfeff;
+    font-family: 'Rouge Script', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 2px #082b34;
+    margin-left: 10px;
+}
+
+.lnk {
+    margin-bottom: 5px;
+}
+
+/* .neg {
+    cursor: not-allowed;
+} */

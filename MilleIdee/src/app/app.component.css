@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Rouge+Script&display=swap');
+
 #h1 {
     /* color: #0a3873; */
     /* font-family: "Brush Script MT"; */
@@ -17,19 +19,22 @@
 }
 
 .header {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     /* font-family: "Chalkduster"; */
     /* font-family: cursive; */
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
     /* font-family: Copperplate,"Copperplate Gothic Light"; */
-
-    text-align: center;
+    /* font-family: 'Rouge Script', cursive; */
+    font-family: 'Carme', sans-serif;
+    text-align: right;
+    font-size: 80px;
     /* margin-top: 2px; */
     /* color: #3293a8; */
     color: white;
     /* text-shadow: 2px 2px 2px #0066cc; */
     /* text-shadow: 2px 2px 0px white; */
-    margin-top: 105px;
+    margin-right: 15px;
+    /* margin-top: 105px; */
     /* color: white; */
 }
 
@@ -44,12 +49,21 @@ img {
     /* background-color: #305fab; */
     background-image: url('src/assets/img/sewing-machine.jpeg');
     background-size: cover;
+    height: 450px;
+    /* width: 100%; */
+    margin-top: 70px;
+    padding-top: 15px;
     /* border-left: 2.5px solid white;
     border-right: 2.5px solid white;
     border-bottom: 0.5px solid white; */
-    border-top: 0.5px solid white;
+    /* border-top: 0.5px solid white; */
     /* border-radius: 8px; */
 }
+
+/* body {
+    background-image: url('src/assets/img/sewing-machine.jpeg');
+    background-size: cover;
+} */
 
 .line {
     background-color: #0a3873;
@@ -58,4 +72,40 @@ img {
     margin-bottom: 15px;
     /* border-left: 10px solid white; */
     border-radius: 20px;
+}
+
+p {
+    color: #FFFFFF;
+    font-family: 'Carme', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    /* margin: 0 0 35px; */
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+@media (max-width:470px) {
+    .head-container {
+        margin-top: 90px;
+    }
+
+    .header {
+        text-align: center;
+        font-size: 65px;
+    }
+
+    #h1 {
+        font-size: 90px;
+    }
+}
+
+@media (max-width:350px) {
+    .head-container {
+        margin-top: 100px;
+    }
+
+    .header {
+        font-size: 55px;
+    }
 }
